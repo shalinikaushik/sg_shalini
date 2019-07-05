@@ -158,7 +158,8 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     Toast.makeText (this, "Invalid Date!", Toast.LENGTH_SHORT).show ( );
                 }
                 Log.d ("final m =", m);
-                anc_1_POG.setText (m);
+                anc_1_POG_box.setText (m);
+
             } catch (ParseException e) {
                 e.printStackTrace ( );
             }
@@ -335,7 +336,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                 anc_1_date.setText (dateFormatterShow.format (anc1_date.getTime ( )));
                 anc_1_dateTime = dateFormatterShow.format (anc1_date.getTime ( ));
                 callDateDiff ();
-                Log.i ("onDateSet: ", "callDateDiff");
             }
 
         }, newCalendar.get (Calendar.YEAR), newCalendar.get (Calendar.MONTH), newCalendar.get (Calendar.DAY_OF_MONTH));
@@ -2338,7 +2338,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
                             newDate1.add(Calendar.DATE, 84);
                             anc1Date.setText("12 Weeks - " + sdf.format(newDate1.getTime()));
-                           // anc_1_POG.setText(response.getString ("anc_1_POG"));
+                            anc_1_POG.setText(response.getString ("anc_1_POG"));
                             anc_1_date.setText(response.getString ("anc_1_date"));
                             anc1_his_others.setText(response.getString ("anc1_his_others"));
                             anc1_exam_height.setText(response.getString ("anc1_exam_height"));

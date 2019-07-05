@@ -11,10 +11,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -66,22 +68,28 @@ public class AllPatientListInDoctorAdapter extends ArrayAdapter<PatientListRowIn
         patientName.setText(current_patient_data.getName());
 
         TextView eddDateOfPatient = (TextView)listItemView.findViewById(R.id.eddDateOfPatientInList);
+        int isdocreg;
         iv = (ImageView)listItemView.findViewById (R.id.nextt);
         if(current_patient_data.getUHID ().equals ("null")) {
             iv.setImageResource (R.drawable.next);
+            isdocreg=0;
         }else{
             iv.setImageResource (R.drawable.open);
+            isdocreg=1;
         }
 
         try {
             eddDateOfPatient.setText("EDD : " + current_patient_data.getEDD());
+            Log.d ("patient id", "EDD : " + current_patient_data.getEDD());
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
         final int patientId = current_patient_data.getPatientId();
+        Log.d ("getpatient", patientId+"");
 
-        getPatientGraph(patientId, current_patient_data, listItemView);
+            getPatientGraph (patientId, current_patient_data, listItemView,isdocreg);
+            Log.d ("yes", "got the graph");
 
         ImageView verified;
         verified = (ImageView)listItemView.findViewById(R.id.verified);
@@ -114,130 +122,268 @@ public class AllPatientListInDoctorAdapter extends ArrayAdapter<PatientListRowIn
         return listItemView;
     }
 
-    public void getPatientGraph(int id, final PatientListRowInDoctorClass current_patient_data, final View listItemView){
-        String url = ApplicationController.get_base_url() + "api/patient/" + id;
+    public void getPatientGraph(int id, final PatientListRowInDoctorClass current_patient_data, final View listItemView, final int isdocreg){
 
+        String url;
+        if(isdocreg==1)
+            url = ApplicationController.get_base_url() + "swasthgarbh/patient/" + id;
+
+        else
+            url = ApplicationController.get_base_url() + "api/patient/" + id;
+        Log.d ("url is : ", url);
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
                 url, null,
                 new Response.Listener<JSONObject>() {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.d("getGraphDATA", response.toString());
-                        try {
+                        Log.d ("getDATA", response.toString ( ));
 
-                            JSONArray patientBpData = response.getJSONArray("data");
+                            try {
+                                LineChart chart = (LineChart) listItemView.findViewById (R.id.patientBpChartInListItem);
 
-                            LineChart chart = (LineChart) listItemView.findViewById(R.id.patientBpChartInListItem);
+                                ArrayList<Entry> yValues = new ArrayList<Entry> ( );
+                                ArrayList<Integer> colorssys = new ArrayList<Integer> ( );
+                                ArrayList<Entry> y2Values = new ArrayList<Entry> ( );
+                                ArrayList<Integer> colorsdys = new ArrayList<Integer> ( );
 
-                            ArrayList<Entry> yValues = new ArrayList<Entry>();
-                            ArrayList<Integer> colorssys = new ArrayList<Integer>();
-                            ArrayList<Entry> y2Values = new ArrayList<Entry>();
-                            ArrayList<Integer> colorsdys = new ArrayList<Integer>();
+                                if (isdocreg==1){
+                                    Object data = response.get ("anc1_exam_BP");
 
-                            Log.d("The length check", "onResponse: " + patientBpData.length());
-                            if(patientBpData.length() != 0){
+                                    ArrayList<String> bpdata = new ArrayList<>();
+                                    bpdata.add("124/70");
+                                    bpdata.add("120/74");
+                                    bpdata.add("126/72");
+                                    bpdata.add("122/75");
+                                    bpdata.add("128/77");
+                                    bpdata.add("125/75");
+                                    bpdata.add("135/80");
+                                    bpdata.add("145/95");
+
+
+//                                    bpdata.add(data+"");
+//                                    data = response.get ("anc2_exam_BP").toString ();
+//                                    bpdata.add(data+"");
+//                                    data = response.get ("anc3_exam_BP");
+//                                        bpdata.add(data+"");
+//                                    data = response.get ("anc4_exam_BP");
+//                                        bpdata.add(data+"");
+//                                    data = response.get ("anc5_exam_BP");
+//                                        bpdata.add(data+"");
+//                                    data = response.get ("anc6_exam_BP");
+//                                        bpdata.add(data+"");
+//                                    data = response.get ("anc7_exam_BP");
+//                                        bpdata.add(data+"");
+//                                    data = response.get ("anc8_exam_BP");
+//                                        bpdata.add(data+"");
+                                    Log.d ("bp ka data", bpdata+"");
+                                    if(bpdata.size ()==0){
+                                        Toast.makeText (getContext (), "BP Data not found", Toast.LENGTH_SHORT).show ( );
+                                    }else{
+                                        for(int i=0;i<bpdata.size ()-1;i++){
+                                            String s = bpdata.get (i);
+                                            Log.d ("bpdataaa",s );
+                                            if(s.contains ("/")) {
+                                                String[] dd = s.split ("/");
+                                                int sys = Integer.parseInt (dd[0].trim ( ));
+                                                int dys = Integer.parseInt (dd[1].trim ( ));
+                                                Log.d ("systolic bp", sys + ","+ dys);
+                                                yValues.add (new Entry (i, sys));
+                                                if (sys > 160) {
+
+                                                    colorssys.add (ContextCompat.getColor (getContext ( ), R.color.chart6));
+                                                } else if (sys > 140 && sys <= 160) {
+                                                    colorssys.add (ContextCompat.getColor (getContext ( ), R.color.chart4));
+                                                } else if (sys <= 145) {
+                                                    colorssys.add (ContextCompat.getColor (getContext ( ), R.color.chartsys));
+                                                }
+
+                                                if (dys > 110) {
+                                                    colorsdys.add (ContextCompat.getColor (getContext ( ), R.color.chart6));
+                                                } else if (dys > 90 && dys <= 110) {
+                                                    colorsdys.add (ContextCompat.getColor (getContext ( ), R.color.chart4));
+                                                } else if (dys <= 90 || i == 1) {
+                                                    colorsdys.add (ContextCompat.getColor (getContext ( ), R.color.chartdys));
+                                                }
+
+                                                if (dys != 0 || i == 1) {
+                                                    y2Values.add (new Entry (i, dys));
+                                                }
+                                            }
+
+
+                                        }
+                                        chart.setDragEnabled (true);
+                                        chart.setScaleEnabled (true);
+                                        chart.getDescription ( ).setEnabled (false);
+
+                                        LineDataSet set1 = new LineDataSet (yValues, "Systolic BP");
+                                        set1.setAxisDependency (YAxis.AxisDependency.LEFT);
+                                        LineDataSet set2 = new LineDataSet (y2Values, "Diastolic BP");
+                                        set2.setAxisDependency (YAxis.AxisDependency.LEFT);
+
+                                        set1.setFillAlpha (110);
+                                        set1.setLineWidth (3.5f);
+                                        set1.setColor (Color.rgb (19, 141, 117));
+                                        set1.setDrawValues (false);
+//                                set1.setDrawCircles(false);
+                                        set1.setCircleColors (colorssys);
+
+                                        set2.setLineWidth (2f);
+                                        set2.setColor (Color.rgb (171, 235, 198));
+                                        set2.setDrawValues (false);
+//                                set2.setDrawCircles(false);
+                                        set2.setCircleColors (colorsdys);
+
+                                        YAxis leftAxis = chart.getAxisLeft ( );
+                                        LimitLine ll = new LimitLine (160f, "Critical");
+                                        ll.setLineColor (Color.rgb (19, 141, 117));
+                                        ll.setLineWidth (1f);
+                                        ll.setTextColor (Color.rgb (19, 141, 117));
+                                        ll.setTextSize (12f);
+                                        ll.enableDashedLine (4, 2, 0);
+                                        leftAxis.addLimitLine (ll);
+
+                                        LimitLine l2 = new LimitLine (90f, "Critical");
+                                        l2.setLineColor (Color.rgb (171, 235, 198));
+                                        l2.setLineWidth (1f);
+                                        l2.setTextColor (Color.rgb (171, 235, 198));
+                                        l2.setTextSize (12f);
+                                        l2.enableDashedLine (4, 2, 0);
+                                        leftAxis.addLimitLine (l2);
+
+                                        set1.setMode (LineDataSet.Mode.HORIZONTAL_BEZIER);
+                                        set2.setMode (LineDataSet.Mode.HORIZONTAL_BEZIER);
+
+                                        ArrayList<ILineDataSet> dataSets = new ArrayList<> ( );
+                                        dataSets.add (set1);
+                                        dataSets.add (set2);
+
+                                        LineData dataa = new LineData (dataSets);
+                                        chart.setData (dataa);
+                                        chart.invalidate ( );
+                                        chart.animateXY (1000, 1000);
+                                    }
+
+                                }else{
+                                    Log.d ("gettheGraph", response.toString ( ));
+                                    JSONArray patientBpData = response.getJSONArray ("data");
+                                    Log.d ("The length check", "onResponse: " + patientBpData.length ( ));
+                                    if (patientBpData.length ( ) != 0) {
 //                                for (int i = 0; i < patientBpData.length(); i++) {
-//                                    JSONObject po = (JSONObject) patientBpData.get(i);
-//                                    yValues.add(new Entry(i, po.getInt("systolic")));
-//                                    y2Values.add(new Entry(i, po.getInt("diastolic")));
+//                                    JSONObject po = (JSONObject) patientBpData.get (i);
+//                                        yValues.add (new Entry (i, po.getInt ("systolic")));
+//                                        y2Values.add (new Entry (i, po.getInt ("diastolic")));
+//
 //                                }
 
-                                for (int i = patientBpData.length()-1; i>=0; i--) {
-                                    JSONObject po = (JSONObject) patientBpData.get(i);
-                                    int len = patientBpData.length();
-//                                    if(po.getInt("systolic") != 0 || len == 1){
-                                        yValues.add(new Entry(patientBpData.length()-i, po.getInt("systolic")));
-//                                    }
+                                        for (int i = patientBpData.length ( ) - 1; i >= 0; i--) {
+                                            JSONObject po = (JSONObject) patientBpData.get (i);
+                                            Log.d ("lao kya h data", po + "");
+                                            int len = patientBpData.length ( );
+                                            if (po.getInt ("systolic") != 0 || len == 1) {
+                                                yValues.add (new Entry (patientBpData.length ( ) - i, po.getInt ("systolic")));
+                                            }
 
-                                    if(po.getInt("systolic") > 160){
-                                        colorssys.add(ContextCompat.getColor(getContext(), R.color.chart6)) ;
-                                    } else if (po.getInt("systolic") > 140 && po.getInt("systolic") <= 160){
-                                        colorssys.add(ContextCompat.getColor(getContext(), R.color.chart4)) ;
-                                    } else if (po.getInt("systolic") <= 145 ){
-                                        colorssys.add(ContextCompat.getColor(getContext(), R.color.chartsys)) ;
+                                            if (po.getInt ("systolic") > 160) {
+                                                colorssys.add (ContextCompat.getColor (getContext ( ), R.color.chart6));
+                                            } else if (po.getInt ("systolic") > 140 && po.getInt ("systolic") <= 160) {
+                                                colorssys.add (ContextCompat.getColor (getContext ( ), R.color.chart4));
+                                            } else if (po.getInt ("systolic") <= 145) {
+                                                colorssys.add (ContextCompat.getColor (getContext ( ), R.color.chartsys));
+                                            }
+
+                                            if (po.getInt ("diastolic") > 110) {
+                                                colorsdys.add (ContextCompat.getColor (getContext ( ), R.color.chart6));
+                                            } else if (po.getInt ("diastolic") > 90 && po.getInt ("diastolic") <= 110) {
+                                                colorsdys.add (ContextCompat.getColor (getContext ( ), R.color.chart4));
+                                            } else if (po.getInt ("diastolic") <= 90 || len == 1) {
+                                                colorsdys.add (ContextCompat.getColor (getContext ( ), R.color.chartdys));
+                                            }
+
+                                            if (po.getInt ("diastolic") != 0 || len == 1) {
+                                                y2Values.add (new Entry (patientBpData.length ( ) - i, po.getInt ("diastolic")));
+                                            }
+                                        }
+
+                                        chart.setDragEnabled (true);
+                                        chart.setScaleEnabled (true);
+                                        chart.getDescription ( ).setEnabled (false);
+
+                                        LineDataSet set1 = new LineDataSet (yValues, "Systolic BP");
+                                        set1.setAxisDependency (YAxis.AxisDependency.LEFT);
+                                        LineDataSet set2 = new LineDataSet (y2Values, "Diastolic BP");
+                                        set2.setAxisDependency (YAxis.AxisDependency.LEFT);
+
+                                        set1.setFillAlpha (110);
+                                        set1.setLineWidth (3.5f);
+                                        set1.setColor (Color.rgb (19, 141, 117));
+                                        set1.setDrawValues (false);
+//                                set1.setDrawCircles(false);
+                                        set1.setCircleColors (colorssys);
+
+                                        set2.setLineWidth (2f);
+                                        set2.setColor (Color.rgb (171, 235, 198));
+                                        set2.setDrawValues (false);
+//                                set2.setDrawCircles(false);
+                                        set2.setCircleColors (colorsdys);
+
+                                        YAxis leftAxis = chart.getAxisLeft ( );
+                                        LimitLine ll = new LimitLine (160f, "Critical");
+                                        ll.setLineColor (Color.rgb (19, 141, 117));
+                                        ll.setLineWidth (1f);
+                                        ll.setTextColor (Color.rgb (19, 141, 117));
+                                        ll.setTextSize (12f);
+                                        ll.enableDashedLine (4, 2, 0);
+                                        leftAxis.addLimitLine (ll);
+
+                                        LimitLine l2 = new LimitLine (90f, "Critical");
+                                        l2.setLineColor (Color.rgb (171, 235, 198));
+                                        l2.setLineWidth (1f);
+                                        l2.setTextColor (Color.rgb (171, 235, 198));
+                                        l2.setTextSize (12f);
+                                        l2.enableDashedLine (4, 2, 0);
+                                        leftAxis.addLimitLine (l2);
+
+                                        set1.setMode (LineDataSet.Mode.HORIZONTAL_BEZIER);
+                                        set2.setMode (LineDataSet.Mode.HORIZONTAL_BEZIER);
+
+                                        ArrayList<ILineDataSet> dataSets = new ArrayList<> ( );
+                                        dataSets.add (set1);
+                                        dataSets.add (set2);
+
+                                        LineData data = new LineData (dataSets);
+                                        chart.setData (data);
+                                        chart.invalidate ( );
+                                        chart.animateXY (1000, 1000);
+                                    } else {
+                                        Toast.makeText (getContext ( ), "bp not found", Toast.LENGTH_SHORT).show ( );
                                     }
-
-                                    if(po.getInt("diastolic") > 110){
-                                        colorsdys.add(ContextCompat.getColor(getContext(), R.color.chart6)) ;
-                                    } else if (po.getInt("diastolic") > 90 && po.getInt("diastolic") <= 110){
-                                        colorsdys.add(ContextCompat.getColor(getContext(), R.color.chart4)) ;
-                                    } else if (po.getInt("diastolic") <= 90 || len == 1) {
-                                        colorsdys.add(ContextCompat.getColor(getContext(), R.color.chartdys)) ;
-                                    }
-
-//                                    if(po.getInt("diastolic") != 0 || len == 1){
-                                        y2Values.add(new Entry(patientBpData.length()-i, po.getInt("diastolic")));
-//                                    }
                                 }
 
-                                chart.setDragEnabled(true);
-                                chart.setScaleEnabled(true);
-                                chart.getDescription().setEnabled(false);
 
-                                LineDataSet set1 = new LineDataSet(yValues, "Systolic BP");
-                                set1.setAxisDependency(YAxis.AxisDependency.LEFT);
-                                LineDataSet set2 = new LineDataSet(y2Values, "Diastolic BP");
-                                set2.setAxisDependency(YAxis.AxisDependency.LEFT);
-
-                                set1.setFillAlpha(110);
-                                set1.setLineWidth(3.5f);
-                                set1.setColor(Color.rgb(19, 141, 117));
-                                set1.setDrawValues(false);
-//                                set1.setDrawCircles(false);
-                                set1.setCircleColors(colorssys);
-
-                                set2.setLineWidth(2f);
-                                set2.setColor(Color.rgb(171, 235, 198));
-                                set2.setDrawValues(false);
-//                                set2.setDrawCircles(false);
-                                set2.setCircleColors(colorsdys);
-
-                                YAxis leftAxis = chart.getAxisLeft();
-                                LimitLine ll = new LimitLine(160f, "Critical");
-                                ll.setLineColor(Color.rgb(19, 141, 117));
-                                ll.setLineWidth(1f);
-                                ll.setTextColor(Color.rgb(19, 141, 117));
-                                ll.setTextSize(12f);
-                                ll.enableDashedLine(4, 2, 0);
-                                leftAxis.addLimitLine(ll);
-
-                                LimitLine l2 = new LimitLine(90f, "Critical");
-                                l2.setLineColor(Color.rgb(171, 235, 198));
-                                l2.setLineWidth(1f);
-                                l2.setTextColor(Color.rgb(171, 235, 198));
-                                l2.setTextSize(12f);
-                                l2.enableDashedLine(4, 2, 0);
-                                leftAxis.addLimitLine(l2);
-
-                                set1.setMode(LineDataSet.Mode.HORIZONTAL_BEZIER);
-                                set2.setMode(LineDataSet.Mode.HORIZONTAL_BEZIER);
-
-                                ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-                                dataSets.add(set1);
-                                dataSets.add(set2);
-
-                                LineData data = new LineData(dataSets);
-                                chart.setData(data);
-                                chart.invalidate();
-//                                chart.animateXY(1000, 1000);
+                            } catch (JSONException e) {
+                                Log.d ("error", "found error");
                             }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+
                     }
                 }, new Response.ErrorListener() {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("TAG", "Error Message: " + error.getMessage());
+                NetworkResponse response = error.networkResponse;
+                String errorMsg = "something happened";
+                if(response != null && response.data != null){
+                    String errorString = new String(response.data);
+                    Log.i("log error", errorString);
+                }
             }
         }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("Content-Type", "application/json");
-   //             params.put("Authorization", "Token " + DoctorScreen.session.getUserDetails().get("Token"));
+                params.put("Authorization", "Token " + DoctorScreen.session.getUserDetails().get("Token"));
                 return params;
             }
         };

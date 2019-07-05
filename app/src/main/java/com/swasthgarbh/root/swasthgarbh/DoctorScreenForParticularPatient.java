@@ -213,6 +213,7 @@ public class DoctorScreenForParticularPatient extends AppCompatActivity implemen
         listPB.setVisibility(View.VISIBLE);
         chartPB.setVisibility(View.VISIBLE);
         String url = ApplicationController.get_base_url() + "api/patient/" + pId ;
+        Log.d ("id is :", url);
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
                 url, null,

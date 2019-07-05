@@ -49,7 +49,7 @@ public class PatientListRowInDoctorClass {
         this.UHID = UHID;
     }
 
-    public PatientListRowInDoctorClass(int pk, String name, String lmp, boolean verified) {
+    public PatientListRowInDoctorClass(int patientId, String name, String lmp, boolean verified) {
         this.patientName = name;
         this.patientLmp = lmp.split("T")[0].split("-")[2] + "-" + lmp.split("T")[0].split("-")[1] + "-" + lmp.split("T")[0].split("-")[0];;
         this.patientId = patientId;
