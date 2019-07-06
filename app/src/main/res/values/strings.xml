@@ -165,7 +165,7 @@
     <string name="Chest_CVS">Chest/CVS</string>
     <string name="P_A">P/A</string>
     <string name="blood_group">Blood Group</string>
-    <string name="husband_blood_group">Husband Blood Group</string>
+    <string name="husband_blood_group">Husband\'s Blood Group</string>
     <string name="hemogram">Hemogram</string>
     <string name="blood_sugar">Blood sugar</string>
     <string name="GTT">GTT with 75 gm glucose</string>
@@ -221,7 +221,7 @@
     <string name="anc_2_hplc">HPLC</string>
     <string name="anc_2_Peripheral_smear">Peripheral smear</string>
     <string name="anc_2_serum_iron">Serum iron studies</string>
-    <string name="anc_2_inj_tetanus">Inj Tetanus o.5 ml im</string>
+    <string name="anc_2_inj_tetanus">Inj Tetanus o.5 ml IM</string>
     <string name="anc_3_Bleeding_leaking_discharge_pv">Bleeding/ spotting per vaginum</string>
     <string name="anc_3_burning_micturition">Burning micturition/ increased frequency of micturition</string>
     <string name="anc_3_fetal_movements">Adequate fetal movements</string>
@@ -234,7 +234,7 @@
     <string name="anc_3_ICT">ICT</string>
     <string name="anc_3_T_Fe_OD">T Fe OD/ Ca BD</string>
     <string name="anc_3_DFMC_LLP">DFMC/LLP</string>
-    <string name="anc_3_danger">Review in labour room, in case any of these danger sign occur :</string>
+    <string name="anc_3_danger">Review in labour room, if danger sign occur :</string>
     <string name="anc_3_bleeding">Bleeding PV</string>
     <string name="anc_3_spotting">Spotting PV</string>
     <string name="anc_3_leaking">Leaking PV</string>
@@ -242,7 +242,7 @@
     <string name="anc_3_abdomenpain">Pain abdomen</string>
     <string name="anc_3_GTT">GTT</string>
     <string name="anc_3_ICTnegative">If ICT negative:</string>
-    <string name="anc_3_inj_antiD">Inj Anti D 300 microgram im</string>
+    <string name="anc_3_inj_antiD">Inj Anti D 300 microgram IM</string>
     <string name="anc_4_T_Fe_OD">T Fe OD</string>
     <string name="anc_4_T_Ca_BD">T Ca BD</string>
     <string name="anc_4_DFMC">DFMC/LLP</string>
@@ -274,5 +274,5 @@
     <string name="anc_3_leaking_discharge_pv">Leaking PV/ Discharge PV</string>
     <string name="anc_8_Fe_Ca">Fe/Ca</string>
     <string name="update_data">Update Data</string>
-    <string name="anc_inj_tetanus">Inj Tetanus 0.5ml im</string>
+    <string name="anc_inj_tetanus">Inj Tetanus 0.5ml IM</string>
 </resources>

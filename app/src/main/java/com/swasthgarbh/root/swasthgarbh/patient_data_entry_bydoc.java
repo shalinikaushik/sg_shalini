@@ -53,28 +53,28 @@ import static com.swasthgarbh.root.swasthgarbh.patient_registration.session;
 public class patient_data_entry_bydoc extends AppCompatActivity {
     CheckBox investigationsBox, invest_chronic_hyper, invest_type_2_diabetes, invest_RHD_native, invest_RHD_post, invest_acyanotic, invest_cyanotic, invest_chronic_liver, invest_chronic_kidney, invest_APLA, invest_SLE;
     CheckBox anc_1, anc1_his_fever, anc1_his_rash, anc1_his_nausea_vomit, anc1_his_bleed, anc1_his_abdpain, anc1_drugin, anc1_his_smoke, anc1_his_alcohol, anc1_his_tob, anc1_his_caff, anc1_his_int, anc1_exam_pallor, anc1_exam_lcterus, anc1_exam_clubbing, anc1_exam_cyanosis, anc1_exam_edem, anc1_exam_lymp, anc1_invest_HIV, anc1_invest_hbsag, anc1_invest_VDRL, anc1_invest_urineRM, anc1_invest_urineCS, anc1_invest_CRL, anc1_invest_NT, anc1_invest_centile, anc1_invest_text, anc1_advice_Tfolate, anc1_advice_TFe, anc1_general_TSH, anc1_general_T_nitro, anc1_general_syp, anc1_general_Tvit, anc1_general_plenty;
-    CheckBox anc_2, anc2_his_breath, anc2_his_fatigue, anc2_his_head, anc2_his_bleed, anc2_his_burn, anc2_his_quick_percieve, anc2_exam_pallor, anc2_exam_pedal, anc2_exam_pa, anc2_invest_quad, anc2_invest_fetal, anc2_advice_OGTT, anc2_advice_TFe, anc2_advice_TCa, anc2_advice_Hb_Talb, anc2_advice_Hb_TFe, anc2_advice_Hb_HPLC, anc2_advice_Hb_peri, anc2_advice_Hb_serum, anc2_advice_tetanus, anc_2_pa_2weeks;
-    CheckBox anc_3, anc3_his_breath, anc3_his_fatigue, anc3_his_head, anc3_his_bleed, anc3_his_leak, anc3_his_burn, anc3_his_fetal_move, anc3_his_itching, anc3_exam_pallor, anc3_exam_pedal, anc3_exam_pa, anc_3_pa_2weeks, anc3_invest_GTT_fast, anc3_invest_GTT_1hr, anc3_invest_GTT_2hr, anc3_invest_CBC, anc3_invest_urine, anc3_invest_ICT, anc3_advice_TFe, anc3_advice_DFMC, anc3_advice_BleedPV, anc3_advice_spotPV, anc3_advice_leakPV, anc3_advice_fetalmove, anc3_advice_abdpain, anc3_advice_injAntiD;
-    CheckBox anc_4, anc4_his_breath, anc4_his_fatigue, anc4_his_head, anc4_his_bleed, anc4_his_burn, anc4_his_fetal_move, anc4_his_itching, anc4_exam_pallor, anc4_exam_pedal, anc4_exam_pa, anc_4_pa_2weeks, anc4_advice_TFe, anc4_advice_TCa, anc4_advice_DFMC, anc4_advice_BleedPV, anc4_advice_spotPV, anc4_advice_leakPV, anc4_advice_fetalmove, anc4_advice_abdpain, anc4_advice_USG;
-    CheckBox anc_5, anc5_his_breath, anc5_his_fatigue, anc5_his_head, anc5_his_bleed, anc5_his_burn, anc5_his_fetal_move, anc5_his_itching, anc5_his_vaginal_del, anc5_his_LSCS_del, anc5_his_birth_attendant, anc5_exam_pallor, anc5_exam_pedal, anc5_exam_pa, anc5_pa_2weeks, anc5_invest_CBC, anc5_invest_LFT, anc5_invest_KFT, anc5_invest_CPR, anc5_advice_DFMC, anc5_advice_TFe_Ca, anc5_advice_BleedPV, anc5_advice_spotPV, anc5_advice_leakPV, anc5_advice_fetalmove, anc5_advice_abdpain, anc5_advice_NST;
-    CheckBox anc_6, anc6_his_breath, anc6_his_fatigue, anc6_his_head, anc6_his_bleed, anc6_his_burn, anc6_his_fetal_move, anc6_his_itching, anc6_exam_pallor, anc6_exam_pedal, anc6_exam_pa, anc6_pa_2weeks, anc6_advice_DFMC, anc6_advice_TFe_Ca, anc6_advice_BleedPV, anc6_advice_spotPV, anc6_advice_leakPV, anc6_advice_fetalmove, anc6_advice_abdpain, anc6_advice_NST;
-    CheckBox anc_7, anc7_his_breath, anc7_his_fatigue, anc7_his_head, anc7_his_bleed, anc7_his_burn, anc7_his_fetal_move, anc7_his_itching, anc7_exam_pallor, anc7_exam_pedal, anc7_exam_pa, anc7_pa_2weeks, anc7_advice_DFMC, anc7_advice_TFe_Ca, anc7_advice_BleedPV, anc7_advice_spotPV, anc7_advice_leakPV, anc7_advice_fetalmove, anc7_advice_abdpain;
+    CheckBox anc_2, anc2_his_breath, anc2_his_fatigue, anc2_his_head, anc2_his_bleed, anc2_his_burn, anc2_his_quick_percieve, anc2_exam_pallor, anc2_exam_pedal, anc2_invest_quad, anc2_invest_fetal, anc2_advice_OGTT, anc2_advice_TFe, anc2_advice_TCa, anc2_advice_Hb_Talb, anc2_advice_Hb_TFe, anc2_advice_Hb_HPLC, anc2_advice_Hb_peri, anc2_advice_Hb_serum, anc2_advice_tetanus;
+    CheckBox anc_3, anc3_his_breath, anc3_his_fatigue, anc3_his_head, anc3_his_bleed, anc3_his_leak, anc3_his_burn, anc3_his_fetal_move, anc3_his_itching, anc3_exam_pallor, anc3_exam_pedal, anc3_invest_GTT_fast, anc3_invest_GTT_1hr, anc3_invest_GTT_2hr, anc3_invest_CBC, anc3_invest_urine, anc3_invest_ICT, anc3_advice_TFe, anc3_advice_DFMC, anc3_advice_BleedPV, anc3_advice_spotPV, anc3_advice_leakPV, anc3_advice_fetalmove, anc3_advice_abdpain, anc3_advice_injAntiD;
+    CheckBox anc_4, anc4_his_breath, anc4_his_fatigue, anc4_his_head, anc4_his_bleed, anc4_his_burn, anc4_his_fetal_move, anc4_his_itching, anc4_exam_pallor, anc4_exam_pedal, anc4_advice_TFe, anc4_advice_TCa, anc4_advice_DFMC, anc4_advice_BleedPV, anc4_advice_spotPV, anc4_advice_leakPV, anc4_advice_fetalmove, anc4_advice_abdpain, anc4_advice_USG;
+    CheckBox anc_5, anc5_his_breath, anc5_his_fatigue, anc5_his_head, anc5_his_bleed, anc5_his_burn, anc5_his_fetal_move, anc5_his_itching, anc5_his_vaginal_del, anc5_his_LSCS_del, anc5_his_birth_attendant, anc5_exam_pallor, anc5_exam_pedal, anc5_invest_CBC, anc5_invest_LFT, anc5_invest_KFT, anc5_invest_CPR, anc5_advice_DFMC, anc5_advice_TFe_Ca, anc5_advice_BleedPV, anc5_advice_spotPV, anc5_advice_leakPV, anc5_advice_fetalmove, anc5_advice_abdpain, anc5_advice_NST;
+    CheckBox anc_6, anc6_his_breath, anc6_his_fatigue, anc6_his_head, anc6_his_bleed, anc6_his_burn, anc6_his_fetal_move, anc6_his_itching, anc6_exam_pallor, anc6_exam_pedal, anc6_advice_DFMC, anc6_advice_TFe_Ca, anc6_advice_BleedPV, anc6_advice_spotPV, anc6_advice_leakPV, anc6_advice_fetalmove, anc6_advice_abdpain, anc6_advice_NST;
+    CheckBox anc_7, anc7_his_breath, anc7_his_fatigue, anc7_his_head, anc7_his_bleed, anc7_his_burn, anc7_his_fetal_move, anc7_his_itching, anc7_exam_pallor, anc7_exam_pedal, anc7_advice_DFMC, anc7_advice_TFe_Ca, anc7_advice_BleedPV, anc7_advice_spotPV, anc7_advice_leakPV, anc7_advice_fetalmove, anc7_advice_abdpain;
     CheckBox anc_8, anc8_his_breath, anc8_his_fatigue, anc8_his_head, anc8_his_bleed, anc8_his_burn, anc8_his_fetal_move, anc8_his_itching, anc8_exam_pallor, anc8_exam_pedal, anc8_exam_pa, anc8_advice_DFMC, anc8_advice_Fe_Ca, anc8_advice_induction;
     EditText invest_others, invest_drug_history, anc_1_date, anc_1_POG, anc1_his_others, anc1_exam_height, anc1_exam_weight, anc1_exam_BMI, anc1_exam_PR, anc1_exam_BP, anc1_exam_RR, anc1_exam_temp, anc1_exam_proteinuria, anc1_exam_chest, anc1_exam_PA, anc1_exam_others, anc1_invest_bg, anc1_invest_husband_bg, anc1_invest_hemo, anc1_invest_bloodsugar_fast, anc1_invest_bloodsugar_post, anc1_invest_GTT_fast, anc1_invest_GTT_1hr, anc1_invest_GTT_2hr, anc1_invest_TSH, anc1_invest_NT_done, anc1_invest_PAPP, anc1_invest_b_hcg, anc1_invest_levelII_done, anc1_invest_normal, anc1_invest_others, anc1_general_nutritional, anc1_general_ailment, anc1_general_ICT, anc1_general_others;
-    EditText anc2_POG, anc2_his_others, anc2_exam_PR, anc2_exam_BP, anc2_exam_weight, anc2_exam_others, anc2_invest_others, anc2_advice_nutri, anc2_advice_general, anc2_advice_common, anc2_advice_others;
-    EditText anc3_his_others, anc3_exam_PR, anc3_exam_BP, anc3_exam_weight, anc3_exam_others, anc3_advice_nutri, anc3_advice_general, anc3_advice_common, anc3_advice_others;
-    EditText anc4_his_others, anc4_exam_PR, anc4_exam_BP, anc4_exam_weight, anc4_exam_others, anc4_advice_nutri, anc4_advice_general, anc4_advice_common, anc4_advice_others;
-    EditText anc5_his_others, anc5_his_timing, anc5_exam_PR, anc5_exam_BP, anc5_exam_weight, anc5_exam_others, anc5_invest_others, anc5_USG_BPD_cm, anc5_USG_BPD_weeks, anc5_USG_BPD_centile, anc5_USG_HC_cm, anc5_USG_HC_weeks, anc5_USG_HC_centile, anc5_USG_AC_cm, anc5_USG_AC_weeks, anc5_USG_AC_centile, anc5_USG_FL_cm, anc5_USG_FL_weeks, anc5_USG_FL_centile, anc5_USG_EFW_gm, anc5_USG_EFW_weeks, anc5_USG_EFW_centile, anc5_USG_liquor_SLP, anc5_USG_liquor_AFI, anc5_USG_UAPI, anc5_USG_UAPI_centile, anc5_USG_MCAPI, anc5_USG_MCAPI_centile, anc5_advice_nutri, anc5_advice_general, anc5_advice_common, anc5_advice_others;
-    EditText anc6_his_others, anc6_exam_PR, anc6_exam_BP, anc6_exam_weight, anc6_exam_others, anc6_exam_pelvic, anc6_advice_others;
-    EditText anc7_his_others, anc7_exam_PR, anc7_exam_BP, anc7_exam_weight, anc7_exam_others, anc7_advice_others;
+    EditText anc2_POG, anc_2_pa_2weeks, anc2_his_others, anc2_exam_PR, anc2_exam_BP, anc2_exam_weight, anc2_exam_others, anc2_invest_others, anc2_advice_nutri, anc2_advice_general, anc2_advice_common, anc2_advice_others;
+    EditText anc3_his_others, anc_3_pa_2weeks, anc3_exam_PR, anc3_exam_BP, anc3_exam_weight, anc3_exam_others, anc3_advice_nutri, anc3_advice_general, anc3_advice_common, anc3_advice_others;
+    EditText anc4_his_others, anc_4_pa_2weeks, anc4_exam_PR, anc4_exam_BP, anc4_exam_weight, anc4_exam_others, anc4_advice_nutri, anc4_advice_general, anc4_advice_common, anc4_advice_others;
+    EditText anc5_his_others, anc5_pa_2weeks, anc5_his_timing, anc5_exam_PR, anc5_exam_BP, anc5_exam_weight, anc5_exam_others, anc5_invest_others, anc5_USG_BPD_cm, anc5_USG_BPD_weeks, anc5_USG_BPD_centile, anc5_USG_HC_cm, anc5_USG_HC_weeks, anc5_USG_HC_centile, anc5_USG_AC_cm, anc5_USG_AC_weeks, anc5_USG_AC_centile, anc5_USG_FL_cm, anc5_USG_FL_weeks, anc5_USG_FL_centile, anc5_USG_EFW_gm, anc5_USG_EFW_weeks, anc5_USG_EFW_centile, anc5_USG_liquor_SLP, anc5_USG_liquor_AFI, anc5_USG_UAPI, anc5_USG_UAPI_centile, anc5_USG_MCAPI, anc5_USG_MCAPI_centile, anc5_advice_nutri, anc5_advice_general, anc5_advice_common, anc5_advice_others;
+    EditText anc6_his_others, anc6_pa_2weeks, anc6_exam_PR, anc6_exam_BP, anc6_exam_weight, anc6_exam_others, anc6_exam_pelvic, anc6_advice_others;
+    EditText anc7_his_others, anc7_pa_2weeks, anc7_exam_PR, anc7_exam_BP, anc7_exam_weight, anc7_exam_others, anc7_advice_others;
     EditText anc8_his_others, anc8_exam_PR, anc8_exam_BP, anc8_exam_weight, anc8_exam_others, anc8_advice_others;
     TextView anc1_date_box, anc_1_POG_box, anc1_history, anc1_his_others_box, anc1_examination, anc1_exam_height_box, anc1_exam_weight_box, anc1_exam_BMI_box, anc1_exam_PR_box, anc1_exam_BP_box, anc1_exam_RR_box, anc1_exam_temp_box, anc1_exam_proteinuria_box, anc1_exam_chest_box, anc1_exam_PA_box, anc1_exam_others_box, anc1_invest_bg_box, anc1_invest_husband_bg_box, anc1_invest_hemo_box, anc1_invest_TSH_box, anc1_invest_NT_done_box, anc1_invest_PAPP_box, anc1_invest_b_hcg_box, anc1_invest_levelII_done_box, anc1_invest_normal_box, anc1_invest_others_box, anc1_general_nutritional_box, anc1_general_ailment_box, anc1_general_ICT_box, anc1_general_others_box, anc1_anthropometry, anc1_investigations, anc1_invest_GTT, anc1_invest_levelII_USG, anc1_advice, anc1_adviceGeneral, anc1_general_Urine, anc1_general_Deranged, anc1_vitals, anc1_invest_bloodsugar, anc1_examinationGen, anc1_NTscan, anc1_investDual;
-    TextView anc_2_POG_box, anc2_his_othersBox, anc_2_exam_PRBox, anc2_exam_BPBox, anc2_exam_weightBox, anc2_exam_othersBox, anc_2_invest_othersBox, anc2_advice_nutriBox, anc2_advice_generalBox, anc2_advice_commonBox, anc2_advice_othersBox, anc_2_history, anc_2_examination, anc2_investigationBox, anc_2_adviceBox, anc2_common_ailment_ifHbBox, anc3_historyBox, Anc_3_examinationBox, anc_3_investigationsBox, anc_3_GTTBox, anc_3_adviceBox, anc_3_inj_antiDBox;
-    TextView anc3_his_othersBox, anc3_exam_PRBox, anc3_exam_BPBox, anc3_exam_weightBox, anc3_exam_othersBox, anc3_advice_nutriBox, anc3_advice_generalBox, anc3_advice_commonBox, anc3_advice_othersBox, anc_3_reviewBox;
-    TextView anc4_his_othersBox, anc4_exam_PRBox, anc4_exam_BPBox, anc4_exam_weightBox, anc4_exam_othersBox, anc4_advice_nutriBox, anc4_advice_generalBox, anc4_advice_commonBox, anc4_advice_othersBox, anc_4_historyBox, ANC_4_examinationBox, anc_4_adviceBox, anc_4_reviewBox;
-    TextView anc5_his_othersBox, anc5_his_timingBox, anc5_exam_PRBox, anc5_exam_BPBox, anc5_exam_weightBox, anc5_exam_othersBox, anc5_invest_othersBox, anc5_USG_BPDBox, anc5_USG_HCBox, anc5_USG_ACBox, anc5_USG_FLBox, anc5_USG_EFWBox, anc5_USG_liquorBox, anc5_USG_UAPIBox, anc5_USG_MCAPIBox, anc5_advice_nutriBox, anc5_advice_generalBox, anc5_advice_commonBox, anc_5_reviewBox, anc5_advice_othersBox, anc5_historyBox, anc5_counsellingBox, anc5_modeOfDeliveryBox, anc5_examinationBox, anc5_investigationBox, anc5_USGBox, anc_5_adviceBox;
-    TextView anc6_his_othersBox, anc6_exam_PRBox, anc6_exam_BPBox, anc6_exam_weightBox, anc6_exam_othersBox, anc6_exam_pelvicBox, anc6_advice_othersBox, anc_6_historyBox, anc_6_examinationBox, anc_6_adviceBox, anc_6_reviewBox;
-    TextView anc7_his_othersBox, anc7_exam_PRBox, anc7_exam_BPBox, anc7_exam_weightBox, anc7_exam_othersBox, anc7_advice_othersBox, anc_7_historyBox, anc_7_examinationBox, anc_7_adviceBox, anc_7_reviewBox;
+    TextView anc2_exam_pa, anc_2_POG_box, anc2_his_othersBox, anc_2_exam_PRBox, anc2_exam_BPBox, anc2_exam_weightBox, anc2_exam_othersBox, anc_2_invest_othersBox, anc2_advice_nutriBox, anc2_advice_generalBox, anc2_advice_commonBox, anc2_advice_othersBox, anc_2_history, anc_2_examination, anc2_investigationBox, anc_2_adviceBox, anc2_common_ailment_ifHbBox, anc3_historyBox, Anc_3_examinationBox, anc_3_investigationsBox, anc_3_GTTBox, anc_3_adviceBox, anc_3_inj_antiDBox;
+    TextView anc3_his_othersBox, anc3_exam_pa, anc3_exam_PRBox, anc3_exam_BPBox, anc3_exam_weightBox, anc3_exam_othersBox, anc3_advice_nutriBox, anc3_advice_generalBox, anc3_advice_commonBox, anc3_advice_othersBox, anc_3_reviewBox;
+    TextView anc4_his_othersBox, anc4_exam_pa, anc4_exam_PRBox, anc4_exam_BPBox, anc4_exam_weightBox, anc4_exam_othersBox, anc4_advice_nutriBox, anc4_advice_generalBox, anc4_advice_commonBox, anc4_advice_othersBox, anc_4_historyBox, ANC_4_examinationBox, anc_4_adviceBox, anc_4_reviewBox;
+    TextView anc5_his_othersBox, anc5_exam_pa, anc5_his_timingBox, anc5_exam_PRBox, anc5_exam_BPBox, anc5_exam_weightBox, anc5_exam_othersBox, anc5_invest_othersBox, anc5_USG_BPDBox, anc5_USG_HCBox, anc5_USG_ACBox, anc5_USG_FLBox, anc5_USG_EFWBox, anc5_USG_liquorBox, anc5_USG_UAPIBox, anc5_USG_MCAPIBox, anc5_advice_nutriBox, anc5_advice_generalBox, anc5_advice_commonBox, anc_5_reviewBox, anc5_advice_othersBox, anc5_historyBox, anc5_counsellingBox, anc5_modeOfDeliveryBox, anc5_examinationBox, anc5_investigationBox, anc5_USGBox, anc_5_adviceBox;
+    TextView anc6_his_othersBox, anc6_exam_pa, anc6_exam_PRBox, anc6_exam_BPBox, anc6_exam_weightBox, anc6_exam_othersBox, anc6_exam_pelvicBox, anc6_advice_othersBox, anc_6_historyBox, anc_6_examinationBox, anc_6_adviceBox, anc_6_reviewBox;
+    TextView anc7_his_othersBox, anc7_exam_pa, anc7_exam_PRBox, anc7_exam_BPBox, anc7_exam_weightBox, anc7_exam_othersBox, anc7_advice_othersBox, anc_7_historyBox, anc_7_examinationBox, anc_7_adviceBox, anc_7_reviewBox;
     TextView anc8_his_othersBox, anc8_exam_PRBox, anc8_exam_BPBox, anc8_exam_weightBox, anc8_exam_othersBox, anc8_advice_othersBox, anc_8_historyBox, anc_8_adviceBox, anc_8_examinationBox;
     TextView invest_othersBox, invest_drug_historyBox, Co_MorbiditiesBox, Heart_DiseaseBox;
     CardView anc1_his_linearBox, anc1_exam_linearBox, invest_heart_linearBox, anc1_invest_linearBox, anc1_advice_linearBox, anc2_his_linearBox, anc2_exam_linearBox, anc2_invest_linearBox, anc2_advice_linearBox, anc3_his_linearBox, anc3_exam_linearBox, anc3_invest_linearBox, anc3_advice_linearBox, anc4_his_linearBox, anc4_exam_linearBox, anc4_advice_linearBox, anc5_his_linearBox, anc5_exam_linearBox, anc5_invest_linearBox, anc5_advice_linearBox, anc5_USG_linearBox, anc6_advice_linearBox, anc6_his_linearBox, anc6_exam_linearBox, anc7_his_linearBox, anc7_exam_linearBox, anc7_advice_linearBox, anc8_his_linearBox, anc8_exam_linearBox, anc8_advice_linearBox;
@@ -158,7 +158,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     Toast.makeText (this, "Invalid Date!", Toast.LENGTH_SHORT).show ( );
                 }
                 Log.d ("final m =", m);
-                anc_1_POG_box.setText (m);
+                anc_1_POG.setText (m);
 
             } catch (ParseException e) {
                 e.printStackTrace ( );
@@ -421,9 +421,9 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc2_exam_pedal = (CheckBox) findViewById(R.id.anc_2_Pedal_edema);
 
-        anc2_exam_pa = (CheckBox) findViewById(R.id.anc_2_pa);
+        anc2_exam_pa = (TextView) findViewById(R.id.anc_2_pa);
 
-        anc_2_pa_2weeks = (CheckBox) findViewById(R.id.anc_2_pa_2weeks);
+        anc_2_pa_2weeks = (EditText) findViewById(R.id.anc_2_pa_2weeks);
 
         anc2_invest_quad = (CheckBox) findViewById(R.id.anc_2_Quadruple_Screen);
 
@@ -489,9 +489,9 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc3_exam_pedal = (CheckBox) findViewById(R.id.anc_3_Pedal_edema);
 
-        anc3_exam_pa = (CheckBox) findViewById(R.id.anc_3_pa);
+        anc3_exam_pa = (TextView) findViewById(R.id.anc_3_pa);
 
-        anc_3_pa_2weeks = (CheckBox) findViewById(R.id.anc_3_pa_2weeks);
+        anc_3_pa_2weeks = (EditText) findViewById(R.id.anc_3_pa_2weeks);
 
         anc3_invest_GTT_fast = (CheckBox) findViewById(R.id.anc_3_GTT_fast);
 
@@ -557,9 +557,9 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc4_exam_pedal = (CheckBox) findViewById(R.id.anc_4_Pedal_edema);
 
-        anc4_exam_pa = (CheckBox) findViewById(R.id.anc_4_pa);
+        anc4_exam_pa = (TextView) findViewById(R.id.anc_4_pa);
 
-        anc_4_pa_2weeks = (CheckBox) findViewById(R.id.anc__pa_2weeks);
+        anc_4_pa_2weeks = (EditText) findViewById(R.id.anc__pa_2weeks);
 
         anc4_advice_TFe = (CheckBox) findViewById(R.id.anc_4_T_Fe_OD);
 
@@ -621,9 +621,9 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc5_exam_pedal = (CheckBox) findViewById(R.id.anc_5_Pedal_edema);
 
-        anc5_exam_pa = (CheckBox) findViewById(R.id.anc_5_pa);
+        anc5_exam_pa = (TextView) findViewById(R.id.anc_5_pa);
 
-        anc5_pa_2weeks = (CheckBox) findViewById(R.id.anc_5_pa_2weeks);
+        anc5_pa_2weeks = (EditText) findViewById(R.id.anc_5_pa_2weeks);
 
         anc5_invest_CBC = (CheckBox) findViewById(R.id.anc_5_CBC);
 
@@ -731,9 +731,9 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc6_exam_pedal = (CheckBox) findViewById(R.id.anc_6_Pedal_edema);
 
-        anc6_exam_pa = (CheckBox) findViewById(R.id.anc_6_pa);
+        anc6_exam_pa = (TextView) findViewById(R.id.anc_6_pa);
 
-        anc6_pa_2weeks = (CheckBox) findViewById(R.id.anc_6_pa_2weeks);
+        anc6_pa_2weeks = (EditText) findViewById(R.id.anc_6_pa_2weeks);
 
         anc6_advice_DFMC = (CheckBox) findViewById(R.id.anc_6_DFMC_LLP);
 
@@ -783,9 +783,9 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc7_exam_pedal = (CheckBox) findViewById(R.id.anc_7_Pedal_edema);
 
-        anc7_exam_pa = (CheckBox) findViewById(R.id.anc_7_pa);
+        anc7_exam_pa = (TextView) findViewById(R.id.anc_7_pa);
 
-        anc7_pa_2weeks = (CheckBox) findViewById(R.id.anc_7_pa_2weeks);
+        anc7_pa_2weeks = (EditText) findViewById(R.id.anc_7_pa_2weeks);
 
         anc7_advice_DFMC = (CheckBox) findViewById(R.id.anc_7_DFMC_LLP);
 
@@ -2432,8 +2432,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc2_his_quick_percieve.setChecked(response.getBoolean("anc2_his_quick_percieve"));
                             anc2_exam_pallor.setChecked(response.getBoolean("anc2_exam_pallor"));
                             anc2_exam_pedal.setChecked(response.getBoolean("anc2_exam_pedal"));
-                            anc2_exam_pa.setChecked(response.getBoolean("anc2_exam_pa"));
-                            anc_2_pa_2weeks.setChecked(response.getBoolean("anc_2_pa_2weeks"));
+                            anc_2_pa_2weeks.setText(response.getString("anc_2_pa_2weeks"));
                             anc2_invest_quad.setChecked(response.getBoolean("anc2_invest_quad"));
                             anc2_invest_fetal.setChecked(response.getBoolean("anc2_invest_fetal"));
                             anc2_advice_OGTT .setChecked(response.getBoolean("anc2_advice_OGTT"));
@@ -2458,6 +2457,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc3_advice_nutri.setText(response.getString ("anc3_advice_nutri"));
                             anc3_advice_general.setText(response.getString ("anc3_advice_general"));
                             anc3_advice_common.setText(response.getString ("anc3_advice_common"));
+                            anc_3_pa_2weeks.setText(response.getString ("anc_3_pa_2weeks"));
                             anc_3.setChecked(response.getBoolean("anc_3"));
                             anc3_his_breath.setChecked(response.getBoolean("anc3_his_breath"));
                             anc3_his_fatigue.setChecked(response.getBoolean("anc3_his_fatigue"));
@@ -2469,8 +2469,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc3_his_itching.setChecked(response.getBoolean("anc3_his_itching"));
                             anc3_exam_pallor.setChecked(response.getBoolean("anc3_exam_pallor"));
                             anc3_exam_pedal.setChecked(response.getBoolean("anc3_exam_pedal"));
-                            anc3_exam_pa.setChecked(response.getBoolean("anc3_exam_pa"));
-                            anc_3_pa_2weeks.setChecked(response.getBoolean("anc_3_pa_2weeks"));
                             anc3_invest_GTT_fast.setChecked(response.getBoolean("anc3_invest_GTT_fast"));
                             anc3_invest_GTT_1hr.setChecked(response.getBoolean("anc3_invest_GTT_1hr"));
                             anc3_invest_GTT_2hr.setChecked(response.getBoolean("anc3_invest_GTT_2hr"));
@@ -2491,6 +2489,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc4_his_others.setText(response.getString ("anc4_his_others"));
                             anc4_exam_PR.setText(response.getString ("anc4_exam_PR"));
                             anc4_exam_BP.setText(response.getString ("anc4_exam_BP"));
+                            anc_4_pa_2weeks.setText(response.getString ("anc_4_pa_2weeks"));
                             anc4_exam_weight.setText(response.getString ("anc4_exam_weight"));
                             anc4_exam_others.setText(response.getString ("anc4_exam_others"));
                             anc4_advice_others.setText(response.getString ("anc4_advice_others"));
@@ -2507,8 +2506,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc4_his_itching.setChecked(response.getBoolean("anc4_his_itching"));
                             anc4_exam_pallor.setChecked(response.getBoolean("anc4_exam_pallor"));
                             anc4_exam_pedal.setChecked(response.getBoolean("anc4_exam_pedal"));
-                            anc4_exam_pa.setChecked(response.getBoolean("anc4_exam_pa"));
-                            anc_4_pa_2weeks.setChecked(response.getBoolean("anc_4_pa_2weeks"));
                             anc4_advice_TFe.setChecked(response.getBoolean("anc4_advice_TFe"));
                             anc4_advice_TCa.setChecked(response.getBoolean("anc4_advice_TCa"));
                             anc4_advice_DFMC.setChecked(response.getBoolean("anc4_advice_DFMC"));
@@ -2525,6 +2522,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc5_his_timing.setText(response.getString ("anc5_his_timing"));
                             anc5_exam_BP.setText(response.getString ("anc5_exam_BP"));
                             anc5_exam_weight.setText(response.getString ("anc5_exam_weight"));
+                            anc5_pa_2weeks.setText(response.getString ("anc_5_pa_2weeks"));
                             anc5_exam_others.setText(response.getString ("anc5_exam_others"));
                             anc5_invest_others.setText(response.getString ("anc5_invest_others"));
                             anc5_USG_BPD_cm.setText(response.getString ("anc5_USG_BPD_cm"));
@@ -2553,7 +2551,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc5_advice_common.setText(response.getString ("anc5_advice_common"));
                             anc5_advice_others.setText(response.getString ("anc5_advice_others"));
                             anc_5.setChecked(response.getBoolean("anc_5"));
-                            anc5_his_breath.setChecked(response.getBoolean("anc5_exam_pallor"));
+                            anc5_his_breath.setChecked(response.getBoolean("anc5_his_breath"));
                             anc5_his_fatigue.setChecked(response.getBoolean("anc5_his_fatigue"));
                             anc5_his_head.setChecked(response.getBoolean("anc5_his_head"));
                             anc5_his_bleed.setChecked(response.getBoolean("anc5_his_bleed"));
@@ -2564,8 +2562,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc5_his_LSCS_del.setChecked(response.getBoolean("anc5_his_LSCS_del"));
                             anc5_his_birth_attendant.setChecked(response.getBoolean("anc5_his_birth_attendant"));
                             anc5_exam_pallor.setChecked(response.getBoolean("anc5_exam_pallor"));
-                            anc5_exam_pa.setChecked(response.getBoolean("anc5_exam_pa"));
-                            anc5_pa_2weeks.setChecked(response.getBoolean("anc_5_pa_2weeks"));
                             anc5_invest_CBC.setChecked(response.getBoolean("anc5_invest_CBC"));
                             anc5_invest_LFT.setChecked(response.getBoolean("anc5_invest_LFT"));
                             anc5_invest_KFT.setChecked(response.getBoolean("anc5_invest_KFT"));
@@ -2583,6 +2579,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc6_his_others.setText(response.getString ("anc6_his_others"));
                             anc6_exam_PR.setText(response.getString ("anc6_exam_PR"));
                             anc6_exam_BP.setText(response.getString ("anc6_exam_BP"));
+                            anc6_pa_2weeks.setText(response.getString ("anc6_pa_2weeks"));
                             anc6_exam_weight.setText(response.getString ("anc6_exam_weight"));
                             anc6_exam_others.setText(response.getString ("anc6_exam_others"));
                             anc6_exam_pelvic.setText(response.getString ("anc6_exam_pelvic"));
@@ -2596,8 +2593,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc6_his_fetal_move.setChecked(response.getBoolean("anc6_his_fetal_move"));
                             anc6_his_itching.setChecked(response.getBoolean("anc6_his_itching"));
                             anc6_exam_pallor.setChecked(response.getBoolean("anc6_exam_pallor"));
-                            anc6_exam_pa.setChecked(response.getBoolean("anc6_exam_pa"));
-                            anc6_pa_2weeks.setChecked(response.getBoolean("anc6_pa_2weeks"));
                             anc6_advice_DFMC.setChecked(response.getBoolean("anc6_advice_DFMC"));
                             anc6_advice_TFe_Ca.setChecked(response.getBoolean("anc6_advice_TFe_Ca"));
                             anc6_advice_BleedPV.setChecked(response.getBoolean("anc6_advice_BleedPV"));
@@ -2612,6 +2607,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc7_his_others.setText(response.getString ("anc7_his_others"));
                             anc7_exam_PR.setText(response.getString ("anc7_exam_PR"));
                             anc7_exam_BP.setText(response.getString ("anc7_exam_BP"));
+                            anc7_pa_2weeks.setText(response.getString ("anc7_pa_2weeks"));
                             anc7_exam_weight.setText(response.getString ("anc7_exam_weight"));
                             anc7_exam_others.setText(response.getString ("anc7_exam_others"));
                             anc7_advice_others.setText(response.getString ("anc7_advice_others"));
@@ -2624,8 +2620,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc7_his_fetal_move.setChecked(response.getBoolean("anc7_his_fetal_move"));
                             anc7_his_itching.setChecked(response.getBoolean("anc7_his_itching"));
                             anc7_exam_pallor.setChecked(response.getBoolean("anc7_exam_pallor"));
-                            anc7_exam_pa.setChecked(response.getBoolean("anc7_exam_pa"));
-                            anc7_pa_2weeks.setChecked(response.getBoolean("anc7_pa_2weeks"));
                             anc7_advice_DFMC.setChecked(response.getBoolean("anc7_advice_DFMC"));
                             anc7_advice_TFe_Ca.setChecked(response.getBoolean("anc7_advice_TFe_Ca"));
                             anc7_advice_BleedPV.setChecked(response.getBoolean("anc7_advice_BleedPV"));
@@ -2776,8 +2770,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc2_his_quick_percieve", anc2_his_quick_percieve.isChecked());
                     params.put("anc2_exam_pallor", anc2_exam_pallor.isChecked());
                     params.put("anc2_exam_pedal", anc2_exam_pedal.isChecked());
-                    params.put("anc2_exam_pa", anc2_exam_pa.isChecked());
-                    params.put("anc_2_pa_2weeks", anc_2_pa_2weeks.isChecked());
                     params.put("anc2_invest_quad", anc2_invest_quad.isChecked());
                     params.put("anc2_invest_fetal", anc2_invest_fetal.isChecked());
                     params.put("anc2_advice_OGTT", anc2_advice_OGTT.isChecked());
@@ -2800,8 +2792,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc3_his_itching", anc3_his_itching.isChecked());
                     params.put("anc3_exam_pallor", anc3_exam_pallor.isChecked());
                     params.put("anc3_exam_pedal", anc3_exam_pedal.isChecked());
-                    params.put("anc3_exam_pa", anc3_exam_pa.isChecked());
-                    params.put("anc_3_pa_2weeks", anc_3_pa_2weeks.isChecked());
                     params.put("anc3_invest_GTT_fast", anc3_invest_GTT_fast.isChecked());
                     params.put("anc3_invest_GTT_1hr", anc3_invest_GTT_1hr.isChecked());
                     params.put("anc3_invest_GTT_2hr", anc3_invest_GTT_2hr.isChecked());
@@ -2826,8 +2816,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc4_his_itching", anc4_his_itching.isChecked());
                     params.put("anc4_exam_pallor", anc4_exam_pallor.isChecked());
                     params.put("anc4_exam_pedal", anc4_exam_pedal.isChecked());
-                    params.put("anc4_exam_pa", anc4_exam_pa.isChecked());
-                    params.put("anc_4_pa_2weeks", anc_4_pa_2weeks.isChecked());
                     params.put("anc4_advice_TFe", anc4_advice_TFe.isChecked());
                     params.put("anc4_advice_TCa", anc4_advice_TCa.isChecked());
                     params.put("anc4_advice_DFMC", anc4_advice_DFMC.isChecked());
@@ -2850,8 +2838,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc5_his_birth_attendant", anc5_his_birth_attendant.isChecked());
                     params.put("anc5_exam_pallor", anc5_exam_pallor.isChecked());
                     params.put("anc5_exam_pedal", anc5_exam_pedal.isChecked());
-                    params.put("anc5_exam_pa", anc5_exam_pa.isChecked());
-                    params.put("anc5_pa_2weeks", anc5_pa_2weeks.isChecked());
                     params.put("anc5_invest_CBC", anc5_invest_CBC.isChecked());
                     params.put("anc5_invest_LFT", anc5_invest_LFT.isChecked());
                     params.put("anc5_invest_KFT", anc5_invest_KFT.isChecked());
@@ -2873,8 +2859,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc6_his_itching", anc6_his_itching.isChecked());
                     params.put("anc6_exam_pallor", anc6_exam_pallor.isChecked());
                     params.put("anc6_exam_pedal", anc6_exam_pedal.isChecked());
-                    params.put("anc6_exam_pa", anc6_exam_pa.isChecked());
-                    params.put("anc6_pa_2weeks", anc6_pa_2weeks.isChecked());
                     params.put("anc6_advice_DFMC", anc6_advice_DFMC.isChecked());
                     params.put("anc6_advice_TFe_Ca", anc6_advice_TFe_Ca.isChecked());
                     params.put("anc6_advice_BleedPV", anc6_advice_BleedPV.isChecked());
@@ -2893,8 +2877,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc7_his_itching", anc7_his_itching.isChecked());
                     params.put("anc7_exam_pallor", anc7_exam_pallor.isChecked());
                     params.put("anc7_exam_pedal", anc7_exam_pedal.isChecked());
-                    params.put("anc7_exam_pa", anc7_exam_pa.isChecked());
-                    params.put("anc7_pa_2weeks", anc7_pa_2weeks.isChecked());
                     params.put("anc7_advice_DFMC", anc7_advice_DFMC.isChecked());
                     params.put("anc6_advice_TFe_Ca", anc7_advice_TFe_Ca.isChecked());
                     params.put("anc7_advice_BleedPV", anc7_advice_BleedPV.isChecked());
@@ -2928,6 +2910,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("invest_SLE", invest_SLE.isChecked());
 
                     params.put("invest_others","" +  invest_others.getText());
+                    params.put("anc_2_pa_2weeks", ""+ anc_2_pa_2weeks.getText ());
                     params.put("invest_drug_history", "" + invest_drug_history.getText());
                     params.put("anc_1_date", anc_1_dateTime);
                     params.put("anc_1_POG", "" + anc_1_POG.getText());
@@ -2980,12 +2963,14 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc3_exam_others", "" + anc3_exam_others.getText());
                     params.put("anc1_general_ailment", "" + anc1_general_ailment.getText());
                     params.put("anc3_advice_nutri", "" + anc3_advice_nutri.getText());
+                    params.put("anc_3_pa_2weeks", "" + anc_3_pa_2weeks.getText());
                     params.put("anc3_advice_general","" +  anc3_advice_general.getText());
                     params.put("anc3_advice_common", "" + anc3_advice_common.getText());
                     params.put("anc3_advice_others", "" + anc3_advice_others.getText());
                     params.put("anc4_his_others", "" + anc4_his_others.getText());
                     params.put("anc4_exam_PR", "" + anc4_exam_PR.getText());
                     params.put("anc4_exam_BP", "" + anc4_exam_BP.getText());
+                    params.put("anc_4_pa_2weeks", "" + anc_4_pa_2weeks.getText());
                     params.put("anc4_exam_weight", "" + anc4_exam_weight.getText());
                     params.put("anc4_exam_others", "" + anc4_exam_others.getText());
                     params.put("anc4_advice_nutri", "" + anc4_advice_nutri.getText());
@@ -2995,6 +2980,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc5_his_others","" +  anc5_his_others.getText());
                     params.put("anc5_his_timing", "" + anc5_his_timing.getText());
                     params.put("anc5_exam_PR","" +  anc5_exam_PR.getText());
+                    params.put("anc_5_pa_2weeks","" +  anc5_pa_2weeks.getText());
                     params.put("anc5_exam_BP","" +  anc5_exam_BP.getText());
                     params.put("anc5_exam_weight", "" + anc5_exam_weight.getText());
                     params.put("anc5_exam_others","" +  anc5_exam_others.getText());
@@ -3027,6 +3013,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc6_his_others", "" + anc6_his_others.getText());
                     params.put("anc6_exam_PR","" +  anc6_exam_PR.getText());
                     params.put("anc6_exam_BP", "" + anc6_exam_BP.getText());
+                    params.put("anc6_pa_2weeks", "" + anc6_pa_2weeks.getText());
                     params.put("anc6_exam_weight", "" + anc6_exam_weight.getText());
                     params.put("anc6_exam_others", "" + anc6_exam_others.getText());
                     params.put("anc6_exam_pelvic", "" + anc6_exam_pelvic.getText());
@@ -3034,6 +3021,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc7_his_others", "" + anc7_his_others.getText());
                     params.put("anc7_exam_PR", "" + anc7_exam_PR.getText());
                     params.put("anc7_exam_BP", "" + anc7_exam_BP.getText());
+                    params.put( "anc7_pa_2weeks","" + anc7_pa_2weeks.getText());
                     params.put("anc7_exam_weight", "" + anc7_exam_weight.getText());
                     params.put("anc7_exam_others", "" + anc7_exam_others.getText());
                     params.put("anc7_advice_others", "" + anc7_advice_others.getText());
