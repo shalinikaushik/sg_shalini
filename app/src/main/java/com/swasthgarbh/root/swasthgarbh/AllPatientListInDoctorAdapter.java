@@ -151,44 +151,39 @@ public class AllPatientListInDoctorAdapter extends ArrayAdapter<PatientListRowIn
                                     Object data = response.get ("anc1_exam_BP");
 
                                     ArrayList<String> bpdata = new ArrayList<>();
-                                    bpdata.add("124/70");
-                                    bpdata.add("120/74");
-                                    bpdata.add("126/72");
-                                    bpdata.add("122/75");
-                                    bpdata.add("128/77");
-                                    bpdata.add("125/75");
-                                    bpdata.add("135/80");
-                                    bpdata.add("145/95");
-
-
-//                                    bpdata.add(data+"");
-//                                    data = response.get ("anc2_exam_BP").toString ();
-//                                    bpdata.add(data+"");
-//                                    data = response.get ("anc3_exam_BP");
-//                                        bpdata.add(data+"");
-//                                    data = response.get ("anc4_exam_BP");
-//                                        bpdata.add(data+"");
-//                                    data = response.get ("anc5_exam_BP");
-//                                        bpdata.add(data+"");
-//                                    data = response.get ("anc6_exam_BP");
-//                                        bpdata.add(data+"");
-//                                    data = response.get ("anc7_exam_BP");
-//                                        bpdata.add(data+"");
-//                                    data = response.get ("anc8_exam_BP");
-//                                        bpdata.add(data+"");
+                                    bpdata.add(data+"");
+                                    data = response.get ("anc2_exam_BP").toString ();
+                                    bpdata.add(data+"");
+                                    data = response.get ("anc3_exam_BP");
+                                        bpdata.add(data+"");
+                                    data = response.get ("anc4_exam_BP");
+                                        bpdata.add(data+"");
+                                    data = response.get ("anc5_exam_BP");
+                                        bpdata.add(data+"");
+                                    data = response.get ("anc6_exam_BP");
+                                        bpdata.add(data+"");
+                                    data = response.get ("anc7_exam_BP");
+                                        bpdata.add(data+"");
+                                    data = response.get ("anc8_exam_BP");
+                                        bpdata.add(data+"");
                                     Log.d ("bp ka data", bpdata+"");
                                     if(bpdata.size ()==0){
                                         Toast.makeText (getContext (), "BP Data not found", Toast.LENGTH_SHORT).show ( );
+
                                     }else{
-                                        for(int i=0;i<bpdata.size ()-1;i++){
+                                        for(int i=0;i<bpdata.size ();i++){
                                             String s = bpdata.get (i);
                                             Log.d ("bpdataaa",s );
                                             if(s.contains ("/")) {
                                                 String[] dd = s.split ("/");
                                                 int sys = Integer.parseInt (dd[0].trim ( ));
                                                 int dys = Integer.parseInt (dd[1].trim ( ));
+
                                                 Log.d ("systolic bp", sys + ","+ dys);
-                                                yValues.add (new Entry (i, sys));
+                                                if (sys != 0 || i == 0) {
+                                                    yValues.add (new Entry (i + 1, sys));
+                                                    Log.d ("values are :", yValues + "");
+                                                }
                                                 if (sys > 160) {
 
                                                     colorssys.add (ContextCompat.getColor (getContext ( ), R.color.chart6));
@@ -206,8 +201,8 @@ public class AllPatientListInDoctorAdapter extends ArrayAdapter<PatientListRowIn
                                                     colorsdys.add (ContextCompat.getColor (getContext ( ), R.color.chartdys));
                                                 }
 
-                                                if (dys != 0 || i == 1) {
-                                                    y2Values.add (new Entry (i, dys));
+                                                if (dys != 0 || bpdata.size () == 1) {
+                                                    y2Values.add (new Entry (i+1, dys));
                                                 }
                                             }
 
