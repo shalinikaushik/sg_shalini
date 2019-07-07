@@ -191,7 +191,7 @@
     <string name="general_nutritional">Nutritional</string>
     <string name="general_ailments">Common Ailments</string>
     <string name="general_BG_negative">If BG Negative- ICT (positive/negative)</string>
-    <string name="general_TSH"><![CDATA[If TSH >3.5 mU/L -T  Eltroxin 25 microgram]]></string>
+    <string name="general_TSH"><![CDATA[If TSH >3.5 mU/L- T  Eltroxin 25 microgram]]></string>
     <string name="general_urine_culture">If Urine culture +ve</string>
     <string name="urine_culture_nitrofur">T Nitrofurantoin 100 mg BDx 7 days</string>
     <string name="urine_culture_syp">Syp Alkasol 2tsp TDS  X alt day for 14 days</string>
@@ -221,7 +221,7 @@
     <string name="anc_2_hplc">HPLC</string>
     <string name="anc_2_Peripheral_smear">Peripheral smear</string>
     <string name="anc_2_serum_iron">Serum iron studies</string>
-    <string name="anc_2_inj_tetanus">Inj Tetanus o.5 ml IM</string>
+    <string name="anc_2_inj_tetanus">Inj Tetanus 0.5 ml IM</string>
     <string name="anc_3_Bleeding_leaking_discharge_pv">Bleeding/ spotting per vaginum</string>
     <string name="anc_3_burning_micturition">Burning micturition/ increased frequency of micturition</string>
     <string name="anc_3_fetal_movements">Adequate fetal movements</string>
@@ -234,7 +234,7 @@
     <string name="anc_3_ICT">ICT</string>
     <string name="anc_3_T_Fe_OD">T Fe OD/ Ca BD</string>
     <string name="anc_3_DFMC_LLP">DFMC/LLP</string>
-    <string name="anc_3_danger">Review in labour room, if danger sign occur :</string>
+    <string name="anc_3_danger">Review in labour room, if danger sign occur </string>
     <string name="anc_3_bleeding">Bleeding PV</string>
     <string name="anc_3_spotting">Spotting PV</string>
     <string name="anc_3_leaking">Leaking PV</string>
@@ -275,4 +275,5 @@
     <string name="anc_8_Fe_Ca">Fe/Ca</string>
     <string name="update_data">Update Data</string>
     <string name="anc_inj_tetanus">Inj Tetanus 0.5ml IM</string>
+    <string name="anc_GTT">GTT with 75 gm glucose</string>
 </resources>

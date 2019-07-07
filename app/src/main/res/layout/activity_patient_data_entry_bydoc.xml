@@ -95,7 +95,6 @@
                             android:id="@+id/investigations_box"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="0dp"
                             android:text="Investigations"
                             android:textColor="@color/colorAccent"
                             android:textSize="50px"
@@ -217,8 +216,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:visibility="gone">
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:id="@+id/others_box"
@@ -227,6 +225,7 @@
                                 android:layout_marginLeft="1dp"
                                 android:gravity="center"
                                 android:text="@string/others"
+                                android:textStyle="italic"
                                 android:textColor="#000000"
                                 android:textSize="15sp"
                                 android:visibility="gone"/>
@@ -236,7 +235,6 @@
                                 android:id="@+id/others"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:backgroundTint="@color/colortheme"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ "
@@ -326,7 +324,7 @@
                                 android:id="@+id/datebox"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/date"
                                 android:textColor="#000000"
@@ -340,6 +338,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:visibility="gone"/>
 
@@ -353,7 +353,7 @@
                                 android:id="@+id/datePOG"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/POG"
                                 android:textColor="#000000"
@@ -366,7 +366,9 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
-                                android:layout_weight="1"
+                                android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:visibility="gone"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
@@ -641,7 +643,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:text="@string/Height"
                                 android:textColor="#000000"
                                 android:textSize="15sp"
@@ -653,7 +655,8 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="5"
-                                android:layout_margin="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -669,7 +672,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:textColor="#000000"
                                 android:text="@string/Weight"
                                 android:textSize="15sp"
@@ -681,7 +684,8 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="5"
-                                android:layout_margin="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="text"
                                 android:visibility="gone"
@@ -698,7 +702,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:text="@string/BMI"
                                 android:textColor="#000000"
                                 android:textSize="15sp"
@@ -710,7 +714,8 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="5"
-                                android:layout_margin="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:inputType="text"
                                 android:hint="(wt/ht(in metres)^2)"
                                 android:backgroundTint="@color/colortheme"
@@ -755,7 +760,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginLeft="6dp"
                             android:text="@string/PR"
                             android:textColor="#000000"
                             android:textSize="15sp"
@@ -766,8 +771,9 @@
                             android:id="@+id/PR"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:layout_weight="5"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
                             android:backgroundTint="@color/colortheme"
                             android:inputType="textMultiLine"
                             android:visibility="gone"
@@ -782,7 +788,7 @@
                                 android:id="@+id/anc_1_vitalsBP"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:textColor="#000000"
                                 android:text="@string/BP"
@@ -794,8 +800,9 @@
                                 android:id="@+id/BP"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -810,7 +817,7 @@
                                 android:id="@+id/anc_1_vitalsRR"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:textColor="#000000"
                                 android:text="@string/RR"
@@ -822,8 +829,9 @@
                                 android:id="@+id/RR"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -838,7 +846,7 @@
                                 android:id="@+id/anc_1_vitalsTemp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Temp"
                                 android:textColor="#000000"
@@ -850,8 +858,9 @@
                                 android:id="@+id/Temp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -866,7 +875,7 @@
                                 android:id="@+id/anc_1_vitalsProt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:textColor="#000000"
                                 android:text="@string/Proteinuria"
@@ -878,8 +887,9 @@
                                 android:id="@+id/Proteinuria"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -894,7 +904,7 @@
                                 android:id="@+id/anc_1_vitalsChest"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:textColor="#000000"
                                 android:text="@string/Chest_CVS"
@@ -906,7 +916,6 @@
                                 android:id="@+id/Chest_CVS"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -922,7 +931,7 @@
                                 android:id="@+id/anc_1_vitalsPA"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/P_A"
                                 android:textColor="#000000"
@@ -934,8 +943,9 @@
                                 android:id="@+id/P_A"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -966,7 +976,6 @@
                                 android:id="@+id/exam_other"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -997,7 +1006,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginRight="30dp"
-                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="5dp"
                             android:text="Investigations "
                             android:textColor="#008B8B"
@@ -1005,7 +1013,43 @@
                             android:textStyle="italic"
                             android:visibility="gone"/>
 
-                        <LinearLayout
+                                <CheckBox
+                                    android:id="@+id/HIV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/HIV"
+                                    android:visibility="gone"/>
+
+                                <CheckBox
+                                    android:id="@+id/Hbsag"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Hbsag"
+                                    android:visibility="gone"/>
+
+                                <CheckBox
+                                    android:id="@+id/VDRL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/VDRL"
+                                    android:visibility="gone"/>
+
+                                <CheckBox
+                                    android:id="@+id/Urine_RM_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Urine_RM_text"
+                                    android:visibility="gone"/>
+
+                                <CheckBox
+                                    android:id="@+id/Urine_CS_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Urine_CS_text"
+                                    android:visibility="gone"/>
+
+
+                                <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -1013,7 +1057,7 @@
                                 android:id="@+id/anc_1_investBg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:textColor="#000000"
                                 android:text="@string/blood_group"
@@ -1025,8 +1069,9 @@
                                 android:id="@+id/blood_group"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1042,7 +1087,7 @@
                                 android:id="@+id/anc_1_investHusBg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:textColor="#000000"
                                 android:text="@string/husband_blood_group"
@@ -1054,8 +1099,9 @@
                                 android:id="@+id/husband_blood_group"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1071,7 +1117,7 @@
                                 android:id="@+id/anc_1_investHem"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:textColor="#000000"
                                 android:text="@string/hemogram"
@@ -1083,8 +1129,9 @@
                                 android:id="@+id/hemogram"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:hint="g/dL"
@@ -1092,149 +1139,6 @@
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
 
                         </LinearLayout>
-
-                                <android.support.v7.widget.CardView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="5dp"
-                                    android:orientation="vertical"
-                                    android:visibility="gone">
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical"
-                                        android:padding="7dp">
-
-                            <TextView
-                                android:id="@+id/anc_1_investBs"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
-                                android:gravity="center"
-                                android:textColor="#000000"
-                                android:text="@string/blood_sugar"
-                                android:textSize="15sp"
-                                android:visibility="gone"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                        <EditText
-                            android:id="@+id/blood_sugar_fasting"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="43dp"
-                            android:layout_weight="5"
-                            android:backgroundTint="@color/colortheme"
-                            android:inputType="textMultiLine"
-                            android:hint="fasting (mg/dL)"
-                            android:visibility="gone"
-                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                        <EditText
-                            android:id="@+id/blood_sugar_post_prandial"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="43dp"
-                            android:layout_weight="5"
-                            android:backgroundTint="@color/colortheme"
-                            android:inputType="textMultiLine"
-                            android:hint="post prandial (mg/dL)"
-                            android:visibility="gone"
-                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-
-                        </LinearLayout>
-                                    </LinearLayout>
-                                </android.support.v7.widget.CardView>
-
-
-                                <android.support.v7.widget.CardView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="5dp"
-                                    android:orientation="vertical"
-                                    android:visibility="gone">
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical"
-                                        android:padding="7dp">
-
-                        <TextView
-                            android:id="@+id/anc_1_investGTT"
-                            android:layout_width="176dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="43dp"
-                            android:layout_marginTop="5dp"
-                            android:gravity="center"
-                            android:textColor="#000000"
-                            android:text="@string/anc_3_GTT"
-                            android:textSize="15sp"
-                            android:visibility="gone"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <EditText
-                                android:id="@+id/GTT_fast"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="43dp"
-                                android:layout_weight="5"
-                                android:backgroundTint="@color/colortheme"
-                                android:inputType="textMultiLine"
-                                android:hint="fasting (mg/dL)"
-                                android:visibility="gone"
-                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <EditText
-                                android:id="@+id/GTT_1_hour"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="43dp"
-                                android:layout_weight="5"
-                                android:backgroundTint="@color/colortheme"
-                                android:inputType="textMultiLine"
-                                android:hint="1 hr (mg/dL)"
-                                android:visibility="gone"
-                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <EditText
-                                android:id="@+id/GTT_2_hour"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="43dp"
-                                android:layout_weight="5"
-                                android:backgroundTint="@color/colortheme"
-                                android:inputType="textMultiLine"
-                                android:hint="2 hr (mg/dL)"
-                                android:visibility="gone"
-                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-
-                        </LinearLayout>
-                                    </LinearLayout>
-                                </android.support.v7.widget.CardView>
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1244,7 +1148,7 @@
                                 android:id="@+id/anc_1_investTSH"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/tsh"
                                 android:textColor="#000000"
@@ -1256,8 +1160,9 @@
                                 android:id="@+id/TSH"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:hint="mU/L"
@@ -1266,40 +1171,151 @@
 
                         </LinearLayout>
 
-                        <CheckBox
-                            android:id="@+id/HIV"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/HIV"
-                            android:visibility="gone"/>
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
 
-                        <CheckBox
-                            android:id="@+id/Hbsag"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Hbsag"
-                            android:visibility="gone"/>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="7dp">
 
-                        <CheckBox
-                            android:id="@+id/VDRL"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/VDRL"
-                            android:visibility="gone"/>
+                                        <TextView
+                                            android:id="@+id/anc_1_investGTT"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center"
+                                            android:textColor="#000000"
+                                            android:text="@string/anc_GTT"
+                                            android:textSize="40px"
+                                            android:textStyle="italic|bold"
+                                            android:visibility="gone"/>
 
-                        <CheckBox
-                            android:id="@+id/Urine_RM_text"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Urine_RM_text"
-                            android:visibility="gone"/>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
 
-                        <CheckBox
-                            android:id="@+id/Urine_CS_text"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Urine_CS_text"
-                            android:visibility="gone"/>
+                                            <EditText
+                                                android:id="@+id/GTT_fast"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="5"
+                                                android:layout_marginLeft="20dp"
+                                                android:gravity="center"
+                                                android:backgroundTint="@color/colortheme"
+                                                android:inputType="textMultiLine"
+                                                android:hint="fasting (mg/dL)"
+                                                android:visibility="gone"
+                                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <EditText
+                                                android:id="@+id/GTT_1_hour"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="5"
+                                                android:layout_marginLeft="20dp"
+                                                android:gravity="center"
+                                                android:backgroundTint="@color/colortheme"
+                                                android:inputType="textMultiLine"
+                                                android:hint="1 hr (mg/dL)"
+                                                android:visibility="gone"
+                                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <EditText
+                                                android:id="@+id/GTT_2_hour"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="5"
+                                                android:layout_marginLeft="20dp"
+                                                android:gravity="center"
+                                                android:backgroundTint="@color/colortheme"
+                                                android:inputType="textMultiLine"
+                                                android:hint="2 hr (mg/dL)"
+                                                android:visibility="gone"
+                                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="7dp">
+
+                                        <TextView
+                                            android:id="@+id/anc_1_investBs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:textStyle="italic|bold"
+                                            android:textColor="#000000"
+                                            android:text="@string/blood_sugar"
+                                            android:textSize="40px"
+                                            android:visibility="gone"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <EditText
+                                                android:id="@+id/blood_sugar_fasting"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="20dp"
+                                                android:gravity="center"
+                                                android:layout_weight="5"
+                                                android:backgroundTint="@color/colortheme"
+                                                android:inputType="textMultiLine"
+                                                android:hint="fasting (mg/dL)"
+                                                android:visibility="gone"
+                                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <EditText
+                                                android:id="@+id/blood_sugar_post_prandial"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="20dp"
+                                                android:gravity="center"
+                                                android:layout_weight="5"
+                                                android:backgroundTint="@color/colortheme"
+                                                android:inputType="textMultiLine"
+                                                android:hint="post prandial (mg/dL)"
+                                                android:visibility="gone"
+                                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
 
                                 <android.support.v7.widget.CardView
                                     android:layout_width="match_parent"
@@ -1320,9 +1336,10 @@
                             android:layout_marginLeft="1dp"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
+                            android:textStyle="bold|italic"
                             android:text="@string/NT_NB_scan"
                             android:textColor="#000000"
-                            android:textSize="15sp"
+                            android:textSize="40px"
                             android:visibility="gone"/>
 
                         <LinearLayout
@@ -1333,7 +1350,7 @@
                                 android:id="@+id/anc_1_investDone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/done"
                                 android:textColor="#000000"
@@ -1345,8 +1362,9 @@
                                 android:id="@+id/NT_NB_done"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1405,9 +1423,10 @@
                             android:layout_marginLeft="1dp"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
+                            android:textStyle="italic|bold"
                             android:text="@string/Dual_screen"
                             android:textColor="#000000"
-                            android:textSize="15sp"
+                            android:textSize="40px"
                             android:visibility="gone"/>
 
                         <LinearLayout
@@ -1418,7 +1437,7 @@
                                 android:id="@+id/anc_1_investPAPP"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Dual_screen_PAPP_A"
                                 android:textColor="#000000"
@@ -1430,8 +1449,9 @@
                                 android:id="@+id/Dual_screen_PAPP_A"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1447,7 +1467,7 @@
                                 android:id="@+id/anc_1_investBcg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
                                 android:text="@string/Dual_screen_B_hcg"
@@ -1461,8 +1481,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1491,11 +1512,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:layout_marginTop="10dp"
                             android:gravity="center"
+                            android:textStyle="bold|italic"
                             android:text="@string/Level_II_USG"
                             android:textColor="#000000"
-                            android:textSize="15sp"
+                            android:textSize="40px"
                             android:visibility="gone"/>
 
                         <LinearLayout
@@ -1506,7 +1527,7 @@
                                 android:id="@+id/anc_1_investLevelIIDone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/done"
                                 android:textColor="#000000"
@@ -1518,8 +1539,9 @@
                                 android:id="@+id/Level_II_USG_done"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1535,7 +1557,7 @@
                                 android:id="@+id/anc_1_investNormal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Level_II_USG_normal"
                                 android:textColor="#000000"
@@ -1548,8 +1570,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1581,7 +1604,6 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -1660,7 +1682,7 @@
                             android:layout_marginRight="30dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="5dp"
-                            android:text="General :"
+                            android:text="General "
                             android:textColor="#008B8B"
                             android:textSize="20dp"
                             android:textStyle="italic"
@@ -1672,9 +1694,9 @@
 
                             <TextView
                                 android:id="@+id/anc_1_GeneralNut"
-                                android:layout_width="150dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/general_nutritional"
                                 android:textColor="#000000"
@@ -1687,8 +1709,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1702,9 +1725,9 @@
 
                             <TextView
                                 android:id="@+id/anc_1_GeneralCommon"
-                                android:layout_width="150dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="27dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/general_ailments"
                                 android:textColor="#000000"
@@ -1717,8 +1740,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1732,9 +1756,9 @@
 
                             <TextView
                                 android:id="@+id/anc_1_GeneralBG"
-                                android:layout_width="150dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="27dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/general_BG_negative"
                                 android:textColor="#000000"
@@ -1747,8 +1771,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1760,17 +1785,29 @@
                             android:id="@+id/general_TSH"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="35dp"
                             android:visibility="gone"
                             android:text="@string/general_TSH" />
 
-                        <TextView
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="7dp">
+
+
+                                    <TextView
                             android:id="@+id/anc_1_GeneralUrine"
-                            android:layout_width="157dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="27dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="5dp"
                             android:gravity="center"
+                            android:textStyle="italic|bold"
                             android:text="@string/general_urine_culture"
                             android:textColor="#000000"
                             android:visibility="gone"
@@ -1780,7 +1817,6 @@
                             android:id="@+id/urine_culture_nitrofur"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="42dp"
                             android:visibility="gone"
                             android:text="@string/urine_culture_nitrofur" />
 
@@ -1788,7 +1824,6 @@
                             android:id="@+id/urine_culture_syp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="42dp"
                             android:visibility="gone"
                             android:text="@string/urine_culture_syp" />
 
@@ -1796,7 +1831,6 @@
                             android:id="@+id/urine_culture_vit_c"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="42dp"
                             android:text="@string/urine_culture_vit_c"
                             android:visibility="gone"/>
 
@@ -1804,16 +1838,18 @@
                             android:id="@+id/urine_culture_plenty"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="42dp"
                             android:text="@string/urine_culture_plenty"
                             android:visibility="gone"/>
 
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
                         <TextView
                             android:id="@+id/anc_1_GeneralDeranged"
-                            android:layout_width="282dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="24dp"
                             android:layout_marginTop="10dp"
+                            android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/general_Deranged_Blood_Sugar"
                             android:textColor="#000000"
@@ -1826,7 +1862,7 @@
 
                             <TextView
                                 android:id="@+id/anc_1_GeneralOthers"
-                                android:layout_width="64dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="27dp"
                                 android:gravity="center"
@@ -1842,8 +1878,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -1886,6 +1923,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ANC 2"
+                                android:layout_marginRight="100dp"
                                 android:textColor="@color/colorAccent"
                                 android:textSize="50px"
                                 android:textStyle="italic" />
@@ -1910,7 +1948,7 @@
                                 android:id="@+id/Anc_2_POG_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Anc_2_POG"
                                 android:textColor="#000000"
@@ -1922,8 +1960,9 @@
                                 android:id="@+id/Anc_2_POG"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2022,7 +2061,6 @@
                                 android:id="@+id/anc_2_his_others"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -2085,7 +2123,7 @@
                                 android:id="@+id/anc_2_PR_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/PR"
                                 android:textColor="#000000"
@@ -2097,8 +2135,9 @@
                                 android:id="@+id/anc_2_PR"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2113,7 +2152,7 @@
                                 android:id="@+id/Anc_2_BP_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/BP"
                                 android:textColor="#000000"
@@ -2125,8 +2164,9 @@
                                 android:id="@+id/Anc_2_BP"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2141,7 +2181,7 @@
                                 android:id="@+id/anc_2_weight_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Weight"
                                 android:textColor="#000000"
@@ -2153,8 +2193,9 @@
                                 android:id="@+id/anc_2_weight"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2169,7 +2210,7 @@
                                             android:id="@+id/anc_2_pa"
                                             android:layout_width="wrap_content"
                                             android:layout_height="match_parent"
-                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginLeft="6dp"
                                             android:gravity="center"
                                             android:text="@string/anc_2_pa"
                                             android:textColor="#000000"
@@ -2181,8 +2222,9 @@
                                             android:id="@+id/anc_2_pa_2weeks"
                                             android:layout_width="0dp"
                                             android:layout_height="wrap_content"
-                                            android:layout_margin="10dp"
                                             android:layout_weight="5"
+                                            android:layout_marginLeft="20dp"
+                                            android:gravity="center"
                                             android:backgroundTint="@color/colortheme"
                                             android:hint="(should be within 2 weeks of POG)"
                                             android:inputType="textMultiLine"
@@ -2212,7 +2254,6 @@
                                 android:id="@+id/anc_2_exam_others"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -2355,7 +2396,70 @@
                                 android:text="@string/anc_2_inj_tetanus"
                                 android:visibility="gone"/>
 
-                        <LinearLayout
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="7dp">
+
+                                    <TextView
+                                        android:id="@+id/anc_2_common_ailment_ifHb"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center"
+                                        android:text="@string/ANC_2_if_hb"
+                                        android:textColor="#000000"
+                                        android:textSize="40px"
+                                        android:textStyle="bold|italic"
+                                        android:visibility="gone"/>
+
+                                    <CheckBox
+                                        android:id="@+id/anc_2_T_Albendazole"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/anc_2_T_Albendazole"
+                                        android:visibility="gone"/>
+
+                                    <CheckBox
+                                        android:id="@+id/anc_2_advice_T_Fe_BD"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/anc_2_advice_T_Fe_BD"
+                                        android:visibility="gone"/>
+
+                                    <CheckBox
+                                        android:id="@+id/anc_2_hplc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/anc_2_hplc"
+                                        android:visibility="gone"/>
+
+                                    <CheckBox
+                                        android:id="@+id/anc_2_Peripheral_smear"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/anc_2_Peripheral_smear"
+                                        android:visibility="gone"/>
+
+                                    <CheckBox
+                                        android:id="@+id/anc_2_serum_iron"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/anc_2_serum_iron"
+                                        android:visibility="gone"/>
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+                            <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -2363,7 +2467,7 @@
                                 android:id="@+id/anc_2_nutritional_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_nutritional_advice"
                                 android:textColor="#000000"
@@ -2378,6 +2482,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2393,7 +2499,7 @@
                                 android:id="@+id/anc_2_General_advice_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_General_advice"
                                 android:textColor="#000000"
@@ -2406,8 +2512,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2424,7 +2531,7 @@
                                 android:id="@+id/anc_2_common_ailment_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_common_ailment"
                                 android:textColor="#000000"
@@ -2437,8 +2544,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2446,67 +2554,6 @@
 
                         </LinearLayout>
 
-                            <android.support.v7.widget.CardView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical"
-                                    android:padding="7dp">
-
-                        <TextView
-                            android:id="@+id/anc_2_common_ailment_ifHb"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="5dp"
-                            android:gravity="center"
-                            android:text="@string/ANC_2_if_hb"
-                            android:textColor="#000000"
-                            android:textSize="40px"
-                            android:textStyle="bold|italic"
-                            android:visibility="gone"/>
-
-                        <CheckBox
-                            android:id="@+id/anc_2_T_Albendazole"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_2_T_Albendazole"
-                            android:visibility="gone"/>
-
-                        <CheckBox
-                            android:id="@+id/anc_2_advice_T_Fe_BD"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_2_advice_T_Fe_BD"
-                            android:visibility="gone"/>
-
-                        <CheckBox
-                            android:id="@+id/anc_2_hplc"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_2_hplc"
-                            android:visibility="gone"/>
-
-                        <CheckBox
-                            android:id="@+id/anc_2_Peripheral_smear"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_2_Peripheral_smear"
-                            android:visibility="gone"/>
-
-                        <CheckBox
-                            android:id="@+id/anc_2_serum_iron"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_2_serum_iron"
-                            android:visibility="gone"/>
-
-                                </LinearLayout>
-                            </android.support.v7.widget.CardView>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -2757,7 +2804,7 @@
                                 android:id="@+id/anc_3_PR_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/PR"
                                 android:textColor="#000000"
@@ -2769,8 +2816,9 @@
                                 android:id="@+id/anc_3_PR"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2785,7 +2833,7 @@
                                 android:id="@+id/Anc_3_BP_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/BP"
                                 android:textColor="#000000"
@@ -2797,8 +2845,9 @@
                                 android:id="@+id/Anc_3_BP"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2813,7 +2862,7 @@
                                 android:id="@+id/anc_3_weight_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Weight"
                                 android:textColor="#000000"
@@ -2825,8 +2874,9 @@
                                 android:id="@+id/anc_3_weight"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -2842,7 +2892,7 @@
                                     android:id="@+id/anc_3_pa"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginLeft="6dp"
                                     android:gravity="center"
                                     android:text="@string/anc_2_pa"
                                     android:textColor="#000000"
@@ -2854,8 +2904,9 @@
                                     android:id="@+id/anc_3_pa_2weeks"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="10dp"
                                     android:layout_weight="5"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="center"
                                     android:backgroundTint="@color/colortheme"
                                     android:hint="(should be within 2 weeks of POG)"
                                     android:inputType="textMultiLine"
@@ -2943,7 +2994,7 @@
                             android:layout_marginTop="5dp"
                             android:gravity="center"
                             android:textColor="#000000"
-                            android:text="@string/GTT"
+                            android:text="@string/anc_3_GTT"
                             android:textStyle="italic|bold"
                             android:textSize="40px"
                             android:visibility="gone"/>
@@ -2997,7 +3048,6 @@
                                 android:id="@+id/anc_3_urine_cs"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -3042,96 +3092,6 @@
                             android:textStyle="italic"
                             android:visibility="gone"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/anc_3_nutritional_box"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
-                                android:gravity="center"
-                                android:text="@string/anc_2_nutritional_advice"
-                                android:textColor="#000000"
-                                android:textSize="15sp"
-                                android:visibility="gone"/>
-
-
-                            <EditText
-                                android:id="@+id/anc_3_nutritional"
-                                android:textSize="15sp"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:layout_weight="5"
-                                android:backgroundTint="@color/colortheme"
-                                android:inputType="textMultiLine"
-                                android:visibility="gone"
-                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/anc_3_General_advice_box"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
-                                android:gravity="center"
-                                android:text="@string/anc_2_General_advice"
-                                android:textColor="#000000"
-                                android:textSize="15sp"
-                                android:visibility="gone"/>
-
-
-                            <EditText
-                                android:id="@+id/anc_3_General_advice"
-                                android:textSize="15sp"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:layout_weight="5"
-                                android:backgroundTint="@color/colortheme"
-                                android:inputType="textMultiLine"
-                                android:visibility="gone"
-                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/anc_3_common_ailment_box"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
-                                android:gravity="center"
-                                android:text="@string/anc_2_common_ailment"
-                                android:textColor="#000000"
-                                android:textSize="15sp"
-                                android:visibility="gone"/>
-
-
-                            <EditText
-                                android:id="@+id/anc_3_common_ailment"
-                                android:textSize="15sp"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:layout_weight="5"
-                                android:backgroundTint="@color/colortheme"
-                                android:inputType="textMultiLine"
-                                android:visibility="gone"
-                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
-
-                        </LinearLayout>
 
                         <CheckBox
                             android:id="@+id/anc_3_T_Fe_OD"
@@ -3173,6 +3133,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
+                            android:textStyle="italic|bold"
                             android:text="@string/anc_3_danger"
                             android:textColor="#000000"
                             android:textSize="15sp"
@@ -3256,7 +3217,102 @@
                                     </LinearLayout>
                                 </android.support.v7.widget.CardView>
 
-                        <LinearLayout
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/anc_3_nutritional_box"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="6dp"
+                                        android:gravity="center"
+                                        android:text="@string/anc_2_nutritional_advice"
+                                        android:textColor="#000000"
+                                        android:textSize="15sp"
+                                        android:visibility="gone"/>
+
+
+                                    <EditText
+                                        android:id="@+id/anc_3_nutritional"
+                                        android:textSize="15sp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:layout_marginLeft="20dp"
+                                        android:gravity="center"
+                                        android:backgroundTint="@color/colortheme"
+                                        android:inputType="textMultiLine"
+                                        android:visibility="gone"
+                                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/anc_3_General_advice_box"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="6dp"
+                                        android:gravity="center"
+                                        android:text="@string/anc_2_General_advice"
+                                        android:textColor="#000000"
+                                        android:textSize="15sp"
+                                        android:visibility="gone"/>
+
+
+                                    <EditText
+                                        android:id="@+id/anc_3_General_advice"
+                                        android:textSize="15sp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:layout_marginLeft="20dp"
+                                        android:gravity="center"
+                                        android:backgroundTint="@color/colortheme"
+                                        android:inputType="textMultiLine"
+                                        android:visibility="gone"
+                                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/anc_3_common_ailment_box"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="6dp"
+                                        android:gravity="center"
+                                        android:text="@string/anc_2_common_ailment"
+                                        android:textColor="#000000"
+                                        android:textSize="15sp"
+                                        android:visibility="gone"/>
+
+
+                                    <EditText
+                                        android:id="@+id/anc_3_common_ailment"
+                                        android:textSize="15sp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:layout_marginLeft="20dp"
+                                        android:gravity="center"
+                                        android:backgroundTint="@color/colortheme"
+                                        android:inputType="textMultiLine"
+                                        android:visibility="gone"
+                                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -3481,7 +3537,15 @@
                             android:text="@string/pallor"
                             android:visibility="gone"/>
 
-                        <LinearLayout
+                            <CheckBox
+                                android:id="@+id/anc_4_Pedal_edema"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Pedal_edema"
+                                android:visibility="gone"/>
+
+
+                            <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -3489,7 +3553,7 @@
                                 android:id="@+id/anc_4_PR_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/PR"
                                 android:textColor="#000000"
@@ -3501,8 +3565,9 @@
                                 android:id="@+id/anc_4_PR"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -3517,7 +3582,7 @@
                                 android:id="@+id/Anc_4_BP_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/BP"
                                 android:textColor="#000000"
@@ -3529,8 +3594,9 @@
                                 android:id="@+id/Anc_4_BP"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -3545,7 +3611,7 @@
                                 android:id="@+id/anc_4_weight_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Weight"
                                 android:textColor="#000000"
@@ -3557,20 +3623,14 @@
                                 android:id="@+id/anc_4_weight"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ "/>
                         </LinearLayout>
-
-                        <CheckBox
-                            android:id="@+id/anc_4_Pedal_edema"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Pedal_edema"
-                            android:visibility="gone"/>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -3580,7 +3640,7 @@
                                     android:id="@+id/anc_4_pa"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginLeft="6dp"
                                     android:gravity="center"
                                     android:text="@string/anc_2_pa"
                                     android:textColor="#000000"
@@ -3592,8 +3652,9 @@
                                     android:id="@+id/anc__pa_2weeks"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="10dp"
                                     android:layout_weight="5"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="center"
                                     android:hint="(should be within 2 weeks of POG)"
                                     android:backgroundTint="@color/colortheme"
                                     android:inputType="textMultiLine"
@@ -3682,6 +3743,13 @@
                             android:text="@string/anc_4_DFMC"
                             android:visibility="gone"/>
 
+                            <CheckBox
+                                android:id="@+id/anc_4_USG"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/anc_3_USG"
+                                android:visibility="gone"/>
+
                             <android.support.v7.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -3699,6 +3767,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
+                            android:textStyle="italic|bold"
                             android:gravity="center"
                             android:text="@string/anc_3_danger"
                             android:textColor="#000000"
@@ -3752,7 +3821,7 @@
                                 android:id="@+id/anc_4_nutritional_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_nutritional_advice"
                                 android:textColor="#000000"
@@ -3765,8 +3834,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -3782,7 +3852,7 @@
                                 android:id="@+id/anc_4_General_advice_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_General_advice"
                                 android:textColor="#000000"
@@ -3795,8 +3865,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -3813,7 +3884,7 @@
                                 android:id="@+id/anc_4_common_ailment_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_common_ailment"
                                 android:textColor="#000000"
@@ -3826,21 +3897,15 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
 
                         </LinearLayout>
-
-                        <CheckBox
-                            android:id="@+id/anc_4_USG"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_3_USG"
-                            android:visibility="gone"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -4103,8 +4168,9 @@
                                 android:id="@+id/anc_5_timing"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:hint="weeks"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4176,7 +4242,7 @@
                                 android:id="@+id/anc_5_PR_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/PR"
                                 android:textColor="#000000"
@@ -4188,8 +4254,9 @@
                                 android:id="@+id/anc_5_PR"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4204,7 +4271,7 @@
                                 android:id="@+id/Anc_5_BP_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/BP"
                                 android:textColor="#000000"
@@ -4216,8 +4283,9 @@
                                 android:id="@+id/Anc_5_BP"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4233,6 +4301,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
+                                android:layout_marginLeft="6dp"
                                 android:text="@string/Weight"
                                 android:textColor="#000000"
                                 android:textSize="15sp"
@@ -4243,8 +4312,9 @@
                                 android:id="@+id/anc_5_weight"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4259,7 +4329,7 @@
                                     android:id="@+id/anc_5_pa"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginLeft="6dp"
                                     android:gravity="center"
                                     android:text="@string/anc_2_pa"
                                     android:textColor="#000000"
@@ -4271,8 +4341,10 @@
                                     android:id="@+id/anc_5_pa_2weeks"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="10dp"
                                     android:layout_weight="5"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="center"
+                                    android:hint="(should be within 2 weeks if POG)"
                                     android:backgroundTint="@color/colortheme"
                                     android:inputType="textMultiLine"
                                     android:visibility="gone"
@@ -4430,7 +4502,7 @@
                                 android:id="@+id/anc_5_BPD_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_BPD"
                                 android:textColor="#000000"
@@ -4442,8 +4514,9 @@
                                 android:id="@+id/anc_5_BPD_cm"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ "
                                 android:hint="cm"
@@ -4454,9 +4527,9 @@
                                 android:id="@+id/anc_5_BPD_weeks"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:hint="weeks"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4466,8 +4539,8 @@
                                 android:id="@+id/anc_5_BPD_centile"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="centile"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4484,7 +4557,7 @@
                                 android:id="@+id/anc_5_HC_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_HC"
                                 android:textColor="#000000"
@@ -4496,9 +4569,10 @@
                                 android:id="@+id/anc_5_HC_cm"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:hint="cm"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4508,8 +4582,8 @@
                                 android:id="@+id/anc_5_HC_weeks"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="weeks"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4520,8 +4594,8 @@
                                 android:id="@+id/anc_5_HC_centile"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="centile"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4538,7 +4612,7 @@
                                 android:id="@+id/anc_5_AC_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_AC"
                                 android:textColor="#000000"
@@ -4550,9 +4624,10 @@
                                 android:id="@+id/anc_5_AC_cm"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:hint="cm"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4562,8 +4637,8 @@
                                 android:id="@+id/anc_5_AC_weeks"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="weeks"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4574,8 +4649,8 @@
                                 android:id="@+id/anc_5_AC_centile"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="centile"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4592,7 +4667,7 @@
                                 android:id="@+id/anc_5_FL_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_FL"
                                 android:textColor="#000000"
@@ -4604,8 +4679,9 @@
                                 android:id="@+id/anc_5_FL_cm"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:hint="cm"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4616,8 +4692,8 @@
                                 android:id="@+id/anc_5_FL_weeks"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="weeks"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4628,8 +4704,8 @@
                                 android:id="@+id/anc_5_FL_centile"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="centile"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4646,7 +4722,7 @@
                                 android:id="@+id/anc_5_EFW_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_EFW"
                                 android:textColor="#000000"
@@ -4658,8 +4734,9 @@
                                 android:id="@+id/anc_5_EFW_gm"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:hint="gm"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4670,8 +4747,8 @@
                                 android:id="@+id/anc_5_EFW_weeks"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="weeks"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4682,8 +4759,8 @@
                                 android:id="@+id/anc_5_EFW_centile"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="centile"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4701,7 +4778,7 @@
                                 android:id="@+id/anc_5_liquor_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_Liquor"
                                 android:textColor="#000000"
@@ -4713,8 +4790,9 @@
                                 android:id="@+id/anc_5_liquor_SLP"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:hint="SLP"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4725,8 +4803,8 @@
                                 android:id="@+id/anc_5_liquor_AFI"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="AFI"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4744,7 +4822,7 @@
                                 android:id="@+id/anc_5_UA_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_UA_PI"
                                 android:textColor="#000000"
@@ -4756,8 +4834,9 @@
                                 android:id="@+id/anc_5_UA_PI"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4767,8 +4846,8 @@
                                 android:id="@+id/anc_5_UA_PI_centile"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="centile"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4786,7 +4865,7 @@
                                 android:id="@+id/anc_5_MCA_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_5_MCA_PI"
                                 android:textColor="#000000"
@@ -4798,8 +4877,9 @@
                                 android:id="@+id/anc_5_MCA_PI"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4809,8 +4889,8 @@
                                 android:id="@+id/anc_5_UA_MCA_centile"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:gravity="center"
                                 android:hint="centile"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
@@ -4871,6 +4951,13 @@
                             android:text="@string/anc_5_T_Fe_Ca"
                             android:visibility="gone"/>
 
+                            <CheckBox
+                                android:id="@+id/anc_5_NST"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/anc_3_NST"
+                                android:visibility="gone"/>
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -4880,7 +4967,7 @@
                                 android:id="@+id/anc_5_nutritional_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_nutritional_advice"
                                 android:textColor="#000000"
@@ -4893,8 +4980,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4910,7 +4998,7 @@
                                 android:id="@+id/anc_5_General_advice_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_General_advice"
                                 android:textColor="#000000"
@@ -4923,8 +5011,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4941,7 +5030,7 @@
                                 android:id="@+id/anc_5_common_ailment_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_2_common_ailment"
                                 android:textColor="#000000"
@@ -4954,8 +5043,9 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -4979,7 +5069,8 @@
                             android:id="@+id/anc_5_review"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="italic|bold"
                             android:gravity="center"
                             android:text="@string/anc_3_danger"
                             android:textColor="#000000"
@@ -5024,13 +5115,6 @@
 
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>
-
-                        <CheckBox
-                            android:id="@+id/anc_5_NST"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_3_NST"
-                            android:visibility="gone"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -5271,7 +5355,7 @@
                                 android:id="@+id/anc_6_PR_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/PR"
                                 android:textColor="#000000"
@@ -5283,8 +5367,9 @@
                                 android:id="@+id/anc_6_PR"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -5299,7 +5384,7 @@
                                 android:id="@+id/Anc_6_BP_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/BP"
                                 android:visibility="gone"
@@ -5311,8 +5396,9 @@
                                 android:id="@+id/Anc_6_BP"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -5327,7 +5413,7 @@
                                 android:id="@+id/anc_6_weight_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="1dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/Weight"
                                 android:textColor="#000000"
@@ -5338,8 +5424,9 @@
                                 android:id="@+id/anc_6_weight"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
@@ -5355,7 +5442,7 @@
                                     android:id="@+id/anc_6_pa"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginLeft="6dp"
                                     android:gravity="center"
                                     android:text="@string/anc_2_pa"
                                     android:textColor="#000000"
@@ -5366,8 +5453,9 @@
                                     android:id="@+id/anc_6_pa_2weeks"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="10dp"
                                     android:layout_weight="5"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="center"
                                     android:backgroundTint="@color/colortheme"
                                     android:inputType="textMultiLine"
                                     android:hint="(should be within 2 weeks of POG)"
@@ -5405,6 +5493,9 @@
 
                         </LinearLayout>
 
+                        </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -5413,7 +5504,7 @@
                                 android:id="@+id/anc_6_pelvic_box"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="0dp"
+                                android:layout_marginLeft="6dp"
                                 android:gravity="center"
                                 android:text="@string/anc_6_Pelvic"
                                 android:textColor="#000000"
@@ -5425,16 +5516,16 @@
                                 android:id="@+id/anc_6_pelvic"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
                                 android:backgroundTint="@color/colortheme"
                                 android:inputType="textMultiLine"
                                 android:visibility="gone"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-!@$%^();':,._=/?`~ " />
 
                         </LinearLayout>
-                        </LinearLayout>
-                        </android.support.v7.widget.CardView>
+
 
                         <android.support.v7.widget.CardView
                             android:id="@+id/anc6_advice_linear"
@@ -5478,6 +5569,13 @@
                             android:text="@string/anc_5_T_Fe_Ca"
                             android:visibility="gone"/>
 
+                            <CheckBox
+                                android:id="@+id/anc_6_NST"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/anc_3_NST"
+                                android:visibility="gone"/>
+
                             <android.support.v7.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -5496,6 +5594,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
+                                    android:textStyle="italic|bold"
                             android:text="@string/anc_3_danger"
                             android:textColor="#000000"
                             android:textSize="15sp"
@@ -5538,13 +5637,6 @@
                             android:visibility="gone"/>
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>
-
-                        <CheckBox
-                            android:id="@+id/anc_6_NST"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/anc_3_NST"
-                            android:visibility="gone"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -5761,6 +5853,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pallor"
+                        android:layout_marginTop="2dp"
                         android:visibility="gone"/>
 
                             <CheckBox
@@ -5779,7 +5872,7 @@
                             android:id="@+id/anc_7_PR_box"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/PR"
                             android:textColor="#000000"
@@ -5791,8 +5884,9 @@
                             android:id="@+id/anc_7_PR"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:layout_weight="5"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
                             android:backgroundTint="@color/colortheme"
                             android:inputType="textMultiLine"
                             android:visibility="gone"
@@ -5807,7 +5901,7 @@
                             android:id="@+id/Anc_7_BP_box"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/BP"
                             android:textColor="#000000"
@@ -5819,8 +5913,9 @@
                             android:id="@+id/Anc_7_BP"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:layout_weight="5"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
                             android:backgroundTint="@color/colortheme"
                             android:inputType="textMultiLine"
                             android:visibility="gone"
@@ -5835,7 +5930,7 @@
                             android:id="@+id/anc_7_weight_box"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/Weight"
                             android:textColor="#000000"
@@ -5847,8 +5942,9 @@
                             android:id="@+id/anc_7_weight"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:layout_weight="5"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
                             android:backgroundTint="@color/colortheme"
                             android:inputType="textMultiLine"
                             android:visibility="gone"
@@ -5864,7 +5960,7 @@
                                     android:id="@+id/anc_7_pa"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginLeft="6dp"
                                     android:gravity="center"
                                     android:text="@string/anc_2_pa"
                                     android:textColor="#000000"
@@ -5876,8 +5972,10 @@
                                     android:id="@+id/anc_7_pa_2weeks"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="10dp"
                                     android:layout_weight="5"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
                                     android:backgroundTint="@color/colortheme"
                                     android:hint="(should be within 2 weeks of POG)"
                                     android:inputType="textMultiLine"
@@ -5978,6 +6076,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
+                        android:textStyle="italic|bold"
                         android:text="@string/anc_3_danger"
                         android:textColor="#000000"
                         android:textSize="15sp"
@@ -6097,7 +6196,7 @@
                         android:id="@+id/anc8_his_linear"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="144dp"
+                        android:layout_margin="5dp"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -6261,7 +6360,7 @@
                             android:id="@+id/anc_8_PR_box"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/PR"
                             android:textColor="#000000"
@@ -6273,8 +6372,9 @@
                             android:id="@+id/anc_8_PR"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:layout_weight="5"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
                             android:backgroundTint="@color/colortheme"
                             android:inputType="textMultiLine"
                             android:visibility="gone"
@@ -6289,7 +6389,7 @@
                             android:id="@+id/anc_8_BP_box"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/BP"
                             android:textColor="#000000"
@@ -6301,8 +6401,9 @@
                             android:id="@+id/Anc_8_BP"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:layout_weight="5"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
                             android:backgroundTint="@color/colortheme"
                             android:inputType="textMultiLine"
                             android:visibility="gone"
@@ -6317,7 +6418,7 @@
                             android:id="@+id/anc_8_weight_box"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/Weight"
                             android:textColor="#000000"
@@ -6329,8 +6430,9 @@
                             android:id="@+id/anc_8_weight"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:layout_weight="5"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
                             android:backgroundTint="@color/colortheme"
                             android:inputType="textMultiLine"
                             android:visibility="gone"

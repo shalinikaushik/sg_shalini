@@ -77,7 +77,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
     TextView anc7_his_othersBox, anc7_exam_pa, anc7_exam_PRBox, anc7_exam_BPBox, anc7_exam_weightBox, anc7_exam_othersBox, anc7_advice_othersBox, anc_7_historyBox, anc_7_examinationBox, anc_7_adviceBox, anc_7_reviewBox;
     TextView anc8_his_othersBox, anc8_exam_PRBox, anc8_exam_BPBox, anc8_exam_weightBox, anc8_exam_othersBox, anc8_advice_othersBox, anc_8_historyBox, anc_8_adviceBox, anc_8_examinationBox;
     TextView invest_othersBox, invest_drug_historyBox, Co_MorbiditiesBox, Heart_DiseaseBox;
-    CardView anc1_his_linearBox, anc1_exam_linearBox, invest_heart_linearBox, anc1_invest_linearBox, anc1_advice_linearBox, anc2_his_linearBox, anc2_exam_linearBox, anc2_invest_linearBox, anc2_advice_linearBox, anc3_his_linearBox, anc3_exam_linearBox, anc3_invest_linearBox, anc3_advice_linearBox, anc4_his_linearBox, anc4_exam_linearBox, anc4_advice_linearBox, anc5_his_linearBox, anc5_exam_linearBox, anc5_invest_linearBox, anc5_advice_linearBox, anc5_USG_linearBox, anc6_advice_linearBox, anc6_his_linearBox, anc6_exam_linearBox, anc7_his_linearBox, anc7_exam_linearBox, anc7_advice_linearBox, anc8_his_linearBox, anc8_exam_linearBox, anc8_advice_linearBox;
+    CardView anc1_his_linearBox, anc1_exam_linearBox, anc1_general_linear, invest_heart_linearBox, anc1_invest_linearBox, anc1_advice_linearBox, anc2_his_linearBox, anc2_exam_linearBox, anc2_invest_linearBox, anc2_advice_linearBox, anc3_his_linearBox, anc3_exam_linearBox, anc3_invest_linearBox, anc3_advice_linearBox, anc4_his_linearBox, anc4_exam_linearBox, anc4_advice_linearBox, anc5_his_linearBox, anc5_exam_linearBox, anc5_invest_linearBox, anc5_advice_linearBox, anc5_USG_linearBox, anc6_advice_linearBox, anc6_his_linearBox, anc6_exam_linearBox, anc7_his_linearBox, anc7_exam_linearBox, anc7_advice_linearBox, anc8_his_linearBox, anc8_exam_linearBox, anc8_advice_linearBox;
 
     int clickedPatientId;
     Button UpdateData;
@@ -1159,6 +1159,8 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc1_advice_linearBox = (CardView) findViewById(R.id.anc1_advice_linear);
 
+        anc1_general_linear = (CardView) findViewById(R.id.anc1_general_linear);
+
         anc2_his_linearBox = (CardView) findViewById(R.id.anc2_his_linear);
 
         anc2_exam_linearBox = (CardView) findViewById(R.id.anc2_exam_linear);
@@ -1208,8 +1210,6 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
         anc8_exam_linearBox = (CardView) findViewById(R.id.anc8_exam_linear);
 
         anc8_advice_linearBox = (CardView) findViewById(R.id.anc8_advice_linear);
-
-
 
 
         anc_1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -1317,6 +1317,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     anc1_invest_GTT.setVisibility (View.VISIBLE);
                     anc1_invest_levelII_USG.setVisibility (View.VISIBLE);
                     anc1_advice.setVisibility (View.VISIBLE);
+                    anc1_general_linear.setVisibility (View.VISIBLE);
                     anc1_adviceGeneral.setVisibility (View.VISIBLE);
                     anc1_general_Urine.setVisibility (View.VISIBLE);
                     anc1_general_Deranged.setVisibility (View.VISIBLE);
@@ -1434,6 +1435,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     anc1_invest_levelII_USG.setVisibility (View.GONE);
                     anc1_advice.setVisibility (View.GONE);
                     anc1_adviceGeneral.setVisibility (View.GONE);
+                    anc1_general_linear.setVisibility (View.GONE);
                     anc1_general_Urine.setVisibility (View.GONE);
                     anc1_general_Deranged.setVisibility (View.GONE);
                     anc1_vitals.setVisibility (View.GONE);
