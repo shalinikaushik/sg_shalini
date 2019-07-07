@@ -60,17 +60,17 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
     CheckBox anc_6, anc6_his_breath, anc6_his_fatigue, anc6_his_head, anc6_his_bleed, anc6_his_burn, anc6_his_fetal_move, anc6_his_itching, anc6_exam_pallor, anc6_exam_pedal, anc6_advice_DFMC, anc6_advice_TFe_Ca, anc6_advice_BleedPV, anc6_advice_spotPV, anc6_advice_leakPV, anc6_advice_fetalmove, anc6_advice_abdpain, anc6_advice_NST;
     CheckBox anc_7, anc7_his_breath, anc7_his_fatigue, anc7_his_head, anc7_his_bleed, anc7_his_burn, anc7_his_fetal_move, anc7_his_itching, anc7_exam_pallor, anc7_exam_pedal, anc7_advice_DFMC, anc7_advice_TFe_Ca, anc7_advice_BleedPV, anc7_advice_spotPV, anc7_advice_leakPV, anc7_advice_fetalmove, anc7_advice_abdpain;
     CheckBox anc_8, anc8_his_breath, anc8_his_fatigue, anc8_his_head, anc8_his_bleed, anc8_his_burn, anc8_his_fetal_move, anc8_his_itching, anc8_exam_pallor, anc8_exam_pedal, anc8_exam_pa, anc8_advice_DFMC, anc8_advice_Fe_Ca, anc8_advice_induction;
-    EditText invest_others, invest_drug_history, anc_1_date, anc_1_POG, anc1_his_others, anc1_exam_height, anc1_exam_weight, anc1_exam_BMI, anc1_exam_PR, anc1_exam_BP, anc1_exam_RR, anc1_exam_temp, anc1_exam_proteinuria, anc1_exam_chest, anc1_exam_PA, anc1_exam_others, anc1_invest_bg, anc1_invest_husband_bg, anc1_invest_hemo, anc1_invest_bloodsugar_fast, anc1_invest_bloodsugar_post, anc1_invest_GTT_fast, anc1_invest_GTT_1hr, anc1_invest_GTT_2hr, anc1_invest_TSH, anc1_invest_NT_done, anc1_invest_PAPP, anc1_invest_b_hcg, anc1_invest_levelII_done, anc1_invest_normal, anc1_invest_others, anc1_general_nutritional, anc1_general_ailment, anc1_general_ICT, anc1_general_others;
+    EditText invest_others, invest_drug_history, anc_1_date, anc_1_POG, anc_1_GeneralDeranged_fasting, anc_1_GeneralDeranged_breakfast, anc_1_GeneralDeranged_lunch, anc_1_GeneralDeranged_dinner, anc1_his_others, anc1_exam_height, anc1_exam_weight, anc1_exam_BMI, anc1_exam_PR, anc1_exam_BP, anc1_exam_RR, anc1_exam_temp, anc1_exam_proteinuria, anc1_exam_chest, anc1_exam_PA, anc1_exam_others, anc1_invest_bg, anc1_invest_husband_bg, anc1_invest_hemo, anc1_invest_bloodsugar_fast, anc1_invest_bloodsugar_post, anc1_invest_GTT_fast, anc1_invest_GTT_1hr, anc1_invest_GTT_2hr, anc1_invest_TSH, anc1_invest_NT_done, anc1_invest_PAPP, anc1_invest_b_hcg, anc1_invest_levelII_done, anc1_invest_normal, anc1_invest_others, anc1_general_nutritional, anc1_general_ailment, anc1_general_ICT, anc1_general_others;
     EditText anc2_POG, anc_2_pa_2weeks, anc2_his_others, anc2_exam_PR, anc2_exam_BP, anc2_exam_weight, anc2_exam_others, anc2_invest_others, anc2_advice_nutri, anc2_advice_general, anc2_advice_common, anc2_advice_others;
-    EditText anc3_his_others, anc_3_pa_2weeks, anc3_exam_PR, anc3_exam_BP, anc3_exam_weight, anc3_exam_others, anc3_advice_nutri, anc3_advice_general, anc3_advice_common, anc3_advice_others;
+    EditText anc3_his_others, anc3_investigation_others, anc_3_pa_2weeks, anc3_exam_PR, anc3_exam_BP, anc3_exam_weight, anc3_exam_others, anc3_advice_nutri, anc3_advice_general, anc3_advice_common, anc3_advice_others;
     EditText anc4_his_others, anc_4_pa_2weeks, anc4_exam_PR, anc4_exam_BP, anc4_exam_weight, anc4_exam_others, anc4_advice_nutri, anc4_advice_general, anc4_advice_common, anc4_advice_others;
     EditText anc5_his_others, anc5_pa_2weeks, anc5_his_timing, anc5_exam_PR, anc5_exam_BP, anc5_exam_weight, anc5_exam_others, anc5_invest_others, anc5_USG_BPD_cm, anc5_USG_BPD_weeks, anc5_USG_BPD_centile, anc5_USG_HC_cm, anc5_USG_HC_weeks, anc5_USG_HC_centile, anc5_USG_AC_cm, anc5_USG_AC_weeks, anc5_USG_AC_centile, anc5_USG_FL_cm, anc5_USG_FL_weeks, anc5_USG_FL_centile, anc5_USG_EFW_gm, anc5_USG_EFW_weeks, anc5_USG_EFW_centile, anc5_USG_liquor_SLP, anc5_USG_liquor_AFI, anc5_USG_UAPI, anc5_USG_UAPI_centile, anc5_USG_MCAPI, anc5_USG_MCAPI_centile, anc5_advice_nutri, anc5_advice_general, anc5_advice_common, anc5_advice_others;
     EditText anc6_his_others, anc6_pa_2weeks, anc6_exam_PR, anc6_exam_BP, anc6_exam_weight, anc6_exam_others, anc6_exam_pelvic, anc6_advice_others;
     EditText anc7_his_others, anc7_pa_2weeks, anc7_exam_PR, anc7_exam_BP, anc7_exam_weight, anc7_exam_others, anc7_advice_others;
     EditText anc8_his_others, anc8_exam_PR, anc8_exam_BP, anc8_exam_weight, anc8_exam_others, anc8_advice_others;
-    TextView anc1_date_box, anc_1_POG_box, anc1_history, anc1_his_others_box, anc1_examination, anc1_exam_height_box, anc1_exam_weight_box, anc1_exam_BMI_box, anc1_exam_PR_box, anc1_exam_BP_box, anc1_exam_RR_box, anc1_exam_temp_box, anc1_exam_proteinuria_box, anc1_exam_chest_box, anc1_exam_PA_box, anc1_exam_others_box, anc1_invest_bg_box, anc1_invest_husband_bg_box, anc1_invest_hemo_box, anc1_invest_TSH_box, anc1_invest_NT_done_box, anc1_invest_PAPP_box, anc1_invest_b_hcg_box, anc1_invest_levelII_done_box, anc1_invest_normal_box, anc1_invest_others_box, anc1_general_nutritional_box, anc1_general_ailment_box, anc1_general_ICT_box, anc1_general_others_box, anc1_anthropometry, anc1_investigations, anc1_invest_GTT, anc1_invest_levelII_USG, anc1_advice, anc1_adviceGeneral, anc1_general_Urine, anc1_general_Deranged, anc1_vitals, anc1_invest_bloodsugar, anc1_examinationGen, anc1_NTscan, anc1_investDual;
+    TextView anc_1_GeneralDeranged_bs, anc_1_GeneralDeranged_fastingBox,anc_1_GeneralDeranged_breakfastBox, anc_1_GeneralDeranged_lunchBox, anc_1_GeneralDeranged_dinnerBox, anc1_date_box, anc_1_POG_box, anc1_history, anc1_his_others_box, anc1_examination, anc1_exam_height_box, anc1_exam_weight_box, anc1_exam_BMI_box, anc1_exam_PR_box, anc1_exam_BP_box, anc1_exam_RR_box, anc1_exam_temp_box, anc1_exam_proteinuria_box, anc1_exam_chest_box, anc1_exam_PA_box, anc1_exam_others_box, anc1_invest_bg_box, anc1_invest_husband_bg_box, anc1_invest_hemo_box, anc1_invest_TSH_box, anc1_invest_NT_done_box, anc1_invest_PAPP_box, anc1_invest_b_hcg_box, anc1_invest_levelII_done_box, anc1_invest_normal_box, anc1_invest_others_box, anc1_general_nutritional_box, anc1_general_ailment_box, anc1_general_ICT_box, anc1_general_others_box, anc1_anthropometry, anc1_investigations, anc1_invest_GTT, anc1_invest_levelII_USG, anc1_advice, anc1_adviceGeneral, anc1_general_Urine, anc1_general_Deranged, anc1_vitals, anc1_invest_bloodsugar, anc1_examinationGen, anc1_NTscan, anc1_investDual;
     TextView anc2_exam_pa, anc_2_POG_box, anc2_his_othersBox, anc_2_exam_PRBox, anc2_exam_BPBox, anc2_exam_weightBox, anc2_exam_othersBox, anc_2_invest_othersBox, anc2_advice_nutriBox, anc2_advice_generalBox, anc2_advice_commonBox, anc2_advice_othersBox, anc_2_history, anc_2_examination, anc2_investigationBox, anc_2_adviceBox, anc2_common_ailment_ifHbBox, anc3_historyBox, Anc_3_examinationBox, anc_3_investigationsBox, anc_3_GTTBox, anc_3_adviceBox, anc_3_inj_antiDBox;
-    TextView anc3_his_othersBox, anc3_exam_pa, anc3_exam_PRBox, anc3_exam_BPBox, anc3_exam_weightBox, anc3_exam_othersBox, anc3_advice_nutriBox, anc3_advice_generalBox, anc3_advice_commonBox, anc3_advice_othersBox, anc_3_reviewBox;
+    TextView anc3_his_othersBox, anc3_investigation_othersbox, anc3_exam_pa, anc3_exam_PRBox, anc3_exam_BPBox, anc3_exam_weightBox, anc3_exam_othersBox, anc3_advice_nutriBox, anc3_advice_generalBox, anc3_advice_commonBox, anc3_advice_othersBox, anc_3_reviewBox;
     TextView anc4_his_othersBox, anc4_exam_pa, anc4_exam_PRBox, anc4_exam_BPBox, anc4_exam_weightBox, anc4_exam_othersBox, anc4_advice_nutriBox, anc4_advice_generalBox, anc4_advice_commonBox, anc4_advice_othersBox, anc_4_historyBox, ANC_4_examinationBox, anc_4_adviceBox, anc_4_reviewBox;
     TextView anc5_his_othersBox, anc5_exam_pa, anc5_his_timingBox, anc5_exam_PRBox, anc5_exam_BPBox, anc5_exam_weightBox, anc5_exam_othersBox, anc5_invest_othersBox, anc5_USG_BPDBox, anc5_USG_HCBox, anc5_USG_ACBox, anc5_USG_FLBox, anc5_USG_EFWBox, anc5_USG_liquorBox, anc5_USG_UAPIBox, anc5_USG_MCAPIBox, anc5_advice_nutriBox, anc5_advice_generalBox, anc5_advice_commonBox, anc_5_reviewBox, anc5_advice_othersBox, anc5_historyBox, anc5_counsellingBox, anc5_modeOfDeliveryBox, anc5_examinationBox, anc5_investigationBox, anc5_USGBox, anc_5_adviceBox;
     TextView anc6_his_othersBox, anc6_exam_pa, anc6_exam_PRBox, anc6_exam_BPBox, anc6_exam_weightBox, anc6_exam_othersBox, anc6_exam_pelvicBox, anc6_advice_othersBox, anc_6_historyBox, anc_6_examinationBox, anc_6_adviceBox, anc_6_reviewBox;
@@ -364,6 +364,14 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
         anc1_exam_chest = (EditText) findViewById(R.id.Chest_CVS);
 
         anc1_exam_PA = (EditText) findViewById(R.id.P_A);
+
+        anc_1_GeneralDeranged_fasting= (EditText) findViewById(R.id.anc_1_GeneralDeranged_fasting);
+
+        anc_1_GeneralDeranged_breakfast= (EditText) findViewById(R.id.anc_1_GeneralDeranged_breakfast);
+
+        anc_1_GeneralDeranged_lunch= (EditText) findViewById(R.id.anc_1_GeneralDeranged_lunch);
+
+        anc_1_GeneralDeranged_dinner= (EditText) findViewById(R.id.anc_1_GeneralDeranged_dinner);
 
         anc1_exam_others = (EditText) findViewById(R.id.exam_other);
 
@@ -861,6 +869,16 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
         anc1_examination = (TextView) findViewById(R.id.anc_1_examination);
 
+        anc_1_GeneralDeranged_bs = (TextView) findViewById (R.id.anc_1_GeneralDeranged_bs);
+
+        anc_1_GeneralDeranged_fastingBox = (TextView) findViewById (R.id.anc_1_GeneralDeranged_fastingBox);
+
+        anc_1_GeneralDeranged_breakfastBox = (TextView) findViewById (R.id.anc_1_GeneralDeranged_breakfastBox);
+
+        anc_1_GeneralDeranged_lunchBox = (TextView) findViewById (R.id.anc_1_GeneralDeranged_lunchBox);
+
+        anc_1_GeneralDeranged_dinnerBox = (TextView) findViewById (R.id.anc_1_GeneralDeranged_dinnerBox);
+
         anc1_examinationGen = (TextView) findViewById(R.id.anc_1_examinationgen);
 
         anc1_anthropometry = (TextView) findViewById(R.id.anc_1_examinationAnth);
@@ -970,6 +988,10 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
         anc_2_invest_othersBox = (TextView) findViewById(R.id.anc_2_invest_others_box);
 
         anc3_historyBox = (TextView) findViewById(R.id.anc3_history_box);
+
+        anc3_investigation_othersbox = (TextView) findViewById(R.id.anc3_investigation_othersbox);
+
+        anc3_investigation_others= (EditText) findViewById(R.id.anc3_investigation_others);
 
         anc3_his_othersBox = (TextView) findViewById(R.id.anc_3_others_box);
 
@@ -1215,6 +1237,15 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
         anc_1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
+                    anc_1_GeneralDeranged_fasting.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_breakfast.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_lunch.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_dinner.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_fastingBox.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_breakfastBox.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_lunchBox.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_dinnerBox.setVisibility (View.VISIBLE);
+                    anc_1_GeneralDeranged_bs.setVisibility (View.VISIBLE);
                     anc1_invest_linearBox.setVisibility (View.VISIBLE);
                     anc1_exam_linearBox.setVisibility (View.VISIBLE);
                     anc1_advice_linearBox.setVisibility (View.VISIBLE);
@@ -1332,6 +1363,15 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
 
                 }else{
+                    anc_1_GeneralDeranged_fasting.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_breakfast.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_lunch.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_dinner.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_fastingBox.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_breakfastBox.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_lunchBox.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_dinnerBox.setVisibility (View.GONE);
+                    anc_1_GeneralDeranged_bs.setVisibility (View.GONE);
                     anc1_invest_linearBox.setVisibility (View.GONE);
                     anc1_exam_linearBox.setVisibility (View.GONE);
                     anc1_advice_linearBox.setVisibility (View.GONE);
@@ -1592,6 +1632,8 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     Anc_3_examinationBox.setVisibility (View.VISIBLE);
                     anc_3_investigationsBox.setVisibility (View.VISIBLE);
                     anc_3_GTTBox.setVisibility (View.VISIBLE);
+                    anc3_investigation_othersbox.setVisibility (View.VISIBLE);
+                    anc3_investigation_others.setVisibility (View.VISIBLE);
                     anc_3_adviceBox.setVisibility (View.VISIBLE);
                     anc_3_inj_antiDBox.setVisibility (View.VISIBLE);
                     anc3_his_breath.setVisibility (View.VISIBLE);
@@ -1652,6 +1694,8 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     anc_3_adviceBox.setVisibility (View.GONE);
                     anc_3_inj_antiDBox.setVisibility (View.GONE);
                     anc3_his_breath.setVisibility (View.GONE);
+                    anc3_investigation_othersbox.setVisibility (View.GONE);
+                    anc3_investigation_others.setVisibility (View.GONE);
                     anc3_his_fatigue.setVisibility (View.GONE);
                     anc3_his_head.setVisibility (View.GONE);
                     anc3_his_bleed.setVisibility (View.GONE);
@@ -2340,6 +2384,10 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
 
                             newDate1.add(Calendar.DATE, 84);
                             anc1Date.setText("12 Weeks - " + sdf.format(newDate1.getTime()));
+                            anc_1_GeneralDeranged_fasting.setText(response.getString ("anc_1_GeneralDeranged_fasting"));
+                            anc_1_GeneralDeranged_breakfast.setText(response.getString ("anc_1_GeneralDeranged_breakfast"));
+                            anc_1_GeneralDeranged_lunch.setText(response.getString ("anc_1_GeneralDeranged_lunch"));
+                            anc_1_GeneralDeranged_dinner.setText(response.getString ("anc_1_GeneralDeranged_dinner"));
                             anc_1_POG.setText(response.getString ("anc_1_POG"));
                             anc_1_date.setText(response.getString ("anc_1_date"));
                             anc1_his_others.setText(response.getString ("anc1_his_others"));
@@ -2453,6 +2501,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                             anc3_his_others.setText(response.getString ("anc3_his_others"));
                             anc3_exam_PR.setText(response.getString ("anc3_exam_PR"));
                             anc3_exam_BP.setText(response.getString ("anc3_exam_BP"));
+                            anc3_investigation_others.setText(response.getString ("anc3_investigation_others"));
                             anc3_exam_weight.setText(response.getString ("anc3_exam_weight"));
                             anc3_exam_others.setText(response.getString ("anc3_exam_others"));
                             anc3_advice_others.setText(response.getString ("anc3_advice_others"));
@@ -2917,6 +2966,10 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc_1_date", anc_1_dateTime);
                     params.put("anc_1_POG", "" + anc_1_POG.getText());
                     params.put("anc1_his_others", "" + anc1_his_others.getText());
+                    params.put("anc_1_GeneralDeranged_fasting", "" + anc_1_GeneralDeranged_fasting.getText());
+                    params.put("anc_1_GeneralDeranged_breakfast", "" + anc_1_GeneralDeranged_breakfast.getText());
+                    params.put("anc_1_GeneralDeranged_lunch", "" + anc_1_GeneralDeranged_lunch.getText());
+                    params.put("anc_1_GeneralDeranged_dinner", "" + anc_1_GeneralDeranged_dinner.getText());
                     params.put("anc1_exam_height", "" + anc1_exam_height.getText());
                     params.put("anc1_exam_weight", "" + anc1_exam_weight.getText());
                     params.put("anc1_exam_BMI", "" + anc1_exam_BMI.getText());
@@ -2960,6 +3013,7 @@ public class patient_data_entry_bydoc extends AppCompatActivity {
                     params.put("anc2_advice_others", "" + anc2_advice_others.getText());
                     params.put("anc3_his_others","" +  anc3_his_others.getText());
                     params.put("anc3_exam_PR", "" + anc3_exam_PR.getText());
+                    params.put("anc3_investigation_others", ""+  anc3_investigation_others.getText());
                     params.put("anc3_exam_BP", "" + anc3_exam_BP.getText());
                     params.put("anc3_exam_weight","" +  anc3_exam_weight.getText());
                     params.put("anc3_exam_others", "" + anc3_exam_others.getText());

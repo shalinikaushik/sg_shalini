@@ -276,4 +276,9 @@
     <string name="update_data">Update Data</string>
     <string name="anc_inj_tetanus">Inj Tetanus 0.5ml IM</string>
     <string name="anc_GTT">GTT with 75 gm glucose</string>
+    <string name="blood_sugar_monitoring">Blood sugar monitoring at home</string>
+    <string name="fast">In fasting</string>
+    <string name="breakfast">After breakfast</string>
+    <string name="lunch">After lunch</string>
+    <string name="dinner">After dinner</string>
 </resources>
