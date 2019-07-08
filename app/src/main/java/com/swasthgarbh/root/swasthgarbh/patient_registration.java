@@ -148,21 +148,6 @@ public class patient_registration extends AppCompatActivity {
             Intent intent = new Intent(this, all_images_view.class);
             intent.putExtra("EXTRA_PATIENT_ID", Integer.parseInt(session.getUserDetails().get("id")));
             startActivity(intent);
-        } else if (item.getItemId() == R.id.hospitalsNearYou){
-//            String url = "https://www.google.co.in/search?q=hospitals+near+you&oq=hospitals+near+you&aqs=chrome..69i57.4099j0j9&client=ms-android-samsung&sourceid=chrome-mobile&ie=UTF-8#istate=lrl:xpd";
-//            Intent webIntent = new Intent(Intent.ACTION_VIEW);
-//            webIntent.setData(Uri.parse(url));
-//            startActivity(webIntent);
-
-//            i = new Intent(this, NearbyHospitals.class);
-//            startActivity(i);
-            //classes used : Dataparser, Nearby Hospitals, DownloadURL, GetNearbyPlacesData
-
-            // Search for hospitals nearby //https://developers.google.com/maps/documentation/urls/android-intents
-            Uri gmmIntentUri = Uri.parse("geo:0,0?q=nearbyhospitals");
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-            mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
         } else if (item.getItemId() == R.id.aboutPre){
             i = new Intent(this, AboutPreeclampsia.class);
             startActivity(i);

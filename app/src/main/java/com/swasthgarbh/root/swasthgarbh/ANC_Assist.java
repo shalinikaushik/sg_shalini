@@ -14,6 +14,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -38,6 +40,28 @@ public class ANC_Assist extends AppCompatActivity {
 
     EditText lmpDate, eddDate;
     String anc1_date,anc2_date,anc3_date,and4_date,anc5_date,anc6_date,anc7_date,anc8_date;
+
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_anc__assist, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent i;
+
+        if (item.getItemId ( ) == R.id.nutri_advise) {
+            i = new Intent (this, advice_nutritional.class);
+            startActivity (i);
+        }else if (item.getItemId() == R.id.hospitalsNearYou) {
+            Uri gmmIntentUri = Uri.parse("geo:0,0?q=nearbyhospitals");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

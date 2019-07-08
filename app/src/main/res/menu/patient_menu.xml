@@ -17,11 +17,6 @@
                 app:showAsAction="ifRoom"
                 android:title="@string/notifications" />
 
-            <item android:id="@+id/hospitalsNearYou"
-                android:icon="@drawable/map"
-                app:showAsAction="ifRoom"
-                android:title="@string/nearby_hospitals" />
-
             <item android:id="@+id/patientImages"
                 android:icon="@drawable/imagemenu"
                 app:showAsAction="ifRoom"

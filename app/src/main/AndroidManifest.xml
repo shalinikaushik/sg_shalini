@@ -27,7 +27,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PatientSignupByDoctor"></activity>
+        <activity android:name=".advice_nutritional"></activity>
+        <activity android:name=".PatientSignupByDoctor" />
         <activity android:name=".patientDetailInDoctor" />
 
         <meta-data
@@ -84,7 +85,6 @@
         <activity android:name=".Disclaimer" />
         <activity android:name=".NearbyHospitals" />
         <activity android:name=".patient_data_entry_bydoc" />
-
         <activity
             android:name=".ANC_Assist"
             android:label="@string/title_activity_anc__assist"
