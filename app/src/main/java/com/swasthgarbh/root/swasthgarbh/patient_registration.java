@@ -141,9 +141,14 @@ public class patient_registration extends AppCompatActivity {
             return true;
         } else if (item.getItemId() == R.id.action_change_doctor){
             change_doctor();
-        } else if (item.getItemId() == R.id.action_notification){
-            i = new Intent(this, PatientNotifications.class);
-            startActivity(i);
+        } else if (item.getItemId() == R.id.action_notification) {
+            i = new Intent (this, PatientNotifications.class);
+            startActivity (i);
+        }else if (item.getItemId() == R.id.hospitalsNearYou) {
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=nearbyhospitals");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
         }  else if (item.getItemId() == R.id.patientImages){
             Intent intent = new Intent(this, all_images_view.class);
             intent.putExtra("EXTRA_PATIENT_ID", Integer.parseInt(session.getUserDetails().get("id")));
