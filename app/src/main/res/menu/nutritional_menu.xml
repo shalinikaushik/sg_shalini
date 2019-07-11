@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/advice"
-        android:title="Nutriotional Advice"
+        android:title="Nutritional Advice"
         android:orderInCategory="101"
         app:showAsAction="always"
         android:icon="@android:drawable/ic_menu_more">

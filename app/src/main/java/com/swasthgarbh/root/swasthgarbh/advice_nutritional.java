@@ -12,6 +12,8 @@ public class advice_nutritional extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_advice_nutritional);
+
+        getSupportActionBar().setTitle("Nutritional Advise");
     }
     
 
