@@ -35,7 +35,7 @@
                     android:id="@+id/nutri_advice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nutritional Advise:"
+                    android:text="Nutritional Advise"
                     android:textStyle="italic|bold" />
 
                 <LinearLayout
