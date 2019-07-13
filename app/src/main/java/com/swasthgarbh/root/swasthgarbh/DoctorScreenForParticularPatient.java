@@ -260,7 +260,7 @@ public class DoctorScreenForParticularPatient extends AppCompatActivity implemen
                                     jo.put("visual_problems", rand.nextBoolean());
                                     jo.put("decreased_fetal_movements", rand.nextBoolean());
                                     jo.put("swelling_in_hands_or_face", rand.nextBoolean());
-                                    jo.put("extra_comments", "No comments");
+                                    jo.put("extra_comments", "N/A");
 
                                     jo.put("time_stamp", "2018-" + String.valueOf((int)(Math.random() * 12 + 1)) + "-" + String.valueOf((int)(Math.random() * 30 + 1)) + "T01:25:37.199340+05:30");
                                     jo.put("pk", session.getUserDetails().get("id"));

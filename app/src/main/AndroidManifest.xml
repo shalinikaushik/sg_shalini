@@ -27,7 +27,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".advice_nutritional"></activity>
+
+        <activity android:name=".advice_nutritional" />
         <activity android:name=".PatientSignupByDoctor" />
         <activity android:name=".patientDetailInDoctor" />
 

@@ -12,7 +12,7 @@
         <menu>
 
             <item android:id="@+id/action_refresh"
-                android:icon="@drawable/reload"
+                android:icon="@drawable/reload2"
                 app:showAsAction="ifRoom"
                 android:title="Refresh" />
 

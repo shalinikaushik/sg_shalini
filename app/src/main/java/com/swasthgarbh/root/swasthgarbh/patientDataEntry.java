@@ -209,11 +209,11 @@ public class patientDataEntry extends AppCompatActivity {
 
                                             try {
                                                 String extraComm = "";
-                                                if(extraComments.getText().length()==0){
-                                                    extraComm = "No Comments";
-                                                } else {
+//                                                if(extraComments.getText().length()==0){
+//                                                    extraComm = "";
+//                                                } else {
                                                     extraComm = extraComments.getText().toString();
-                                                }
+//                                                }
                                                 HashMap<String, String> user = session.getUserDetails();
                                                 params.put("byte", ImgBytes);
                                                 params.put("extra_comments_image",extraComm);
@@ -298,13 +298,16 @@ public class patientDataEntry extends AppCompatActivity {
                             params.put("swelling_in_hands_or_face", swell.isChecked());
                             params.put("hyper_tension", (sys >= 180 && dys >=120) ? Boolean.TRUE : Boolean.FALSE);
 
-                            String extraComm = "";
-                            if(extraComments.getText().length()==0){
-                                extraComm = "No Comments";
-                            } else {
-                                extraComm = extraComments.getText().toString();
-                            }
-                            params.put("extra_comments", extraComm);
+                            String extraComm = extraComments.getText ( ).toString ( );
+//                            if(extraComments.getText().length()==0){
+//                                extraComm = "";
+//                          }
+//                            else {
+//                                extraComm = extraComments.getText ( ).toString ( );
+                                params.put ("extra_comments", extraComments.getText ( ).toString ( ));
+//                            }
+
+
 
                             params.put("patient", session.getUserDetails().get("id"));
 //                            params.put("time_stamp",currentDateandTime);

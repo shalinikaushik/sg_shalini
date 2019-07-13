@@ -130,39 +130,46 @@ public class patientDataAdapter extends ArrayAdapter<patient_data_listview_class
 //            Log.i("swelling", "getView: " + current_patient_data.getSwelling_in_hands_or_face());
 //            Log.i("decreasedMove", "getView: " + current_patient_data.getDecreased_fetal_movements());
 //            Log.i("visualProb", "getView: " + current_patient_data.getVisual_problems());
-            LinearLayout otherDetailsPatient = (LinearLayout) listItemView.findViewById(R.id.otherDetailsPatient);
-            TextView abdominalPain = (TextView) listItemView.findViewById(R.id.abdominalPain);
-            TextView headache = (TextView) listItemView.findViewById(R.id.headache);
-            TextView swelling = (TextView) listItemView.findViewById(R.id.swelling);
-            TextView decreasedMove = (TextView) listItemView.findViewById(R.id.decreasedMove);
-            TextView visualProb = (TextView) listItemView.findViewById(R.id.visualProb);
-            TextView extraComment = (TextView) listItemView.findViewById(R.id.extraComments);
-            if (!current_patient_data.getAbdominal_pain()) {
-                abdominalPain.setVisibility(View.GONE);
+            LinearLayout otherDetailsPatient = (LinearLayout) listItemView.findViewById (R.id.otherDetailsPatient);
+            TextView abdominalPain = (TextView) listItemView.findViewById (R.id.abdominalPain);
+            TextView headache = (TextView) listItemView.findViewById (R.id.headache);
+            TextView swelling = (TextView) listItemView.findViewById (R.id.swelling);
+            TextView decreasedMove = (TextView) listItemView.findViewById (R.id.decreasedMove);
+            TextView visualProb = (TextView) listItemView.findViewById (R.id.visualProb);
+            TextView extraComment = (TextView) listItemView.findViewById (R.id.extraComments);
+            if (!current_patient_data.getAbdominal_pain ( )) {
+                abdominalPain.setVisibility (View.GONE);
             } else {
-                abdominalPain.setVisibility(View.VISIBLE);
+                abdominalPain.setVisibility (View.VISIBLE);
             }
-            if (!current_patient_data.getHeadache()) {
-                headache.setVisibility(View.GONE);
-            }else{
-                headache.setVisibility(View.VISIBLE);
+            if (!current_patient_data.getHeadache ( )) {
+                headache.setVisibility (View.GONE);
+            } else {
+                headache.setVisibility (View.VISIBLE);
             }
-            if (!current_patient_data.getSwelling_in_hands_or_face()) {
-                swelling.setVisibility(View.GONE);
-            }else{
-                swelling.setVisibility(View.VISIBLE);
+            if (!current_patient_data.getSwelling_in_hands_or_face ( )) {
+                swelling.setVisibility (View.GONE);
+            } else {
+                swelling.setVisibility (View.VISIBLE);
             }
-            if (!current_patient_data.getDecreased_fetal_movements()) {
-                decreasedMove.setVisibility(View.GONE);
-            }else{
-                decreasedMove.setVisibility(View.VISIBLE);
+            if (!current_patient_data.getDecreased_fetal_movements ( )) {
+                decreasedMove.setVisibility (View.GONE);
+            } else {
+                decreasedMove.setVisibility (View.VISIBLE);
             }
-            if (!current_patient_data.getVisual_problems()) {
-                visualProb.setVisibility(View.GONE);
-            }else{
-                visualProb.setVisibility(View.VISIBLE);
+            if (!current_patient_data.getVisual_problems ( )) {
+                visualProb.setVisibility (View.GONE);
+            } else {
+                visualProb.setVisibility (View.VISIBLE);
             }
-            extraComment.setText("Extra Comments: "+current_patient_data.getExtra_comments());
+            if (!current_patient_data.getExtra_comments ( ).equals("null") ){
+                Log.d ("extraaa", current_patient_data.getExtra_comments ( ));
+                extraComment.setText ("Extra Comments: " + current_patient_data.getExtra_comments ( ));
+            }else {
+                extraComment.setVisibility (View.GONE);
+                Log.d ("extraelse", "blank");
+
+            }
         }
 
 

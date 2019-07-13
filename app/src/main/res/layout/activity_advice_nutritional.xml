@@ -67,7 +67,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ensure adequate hydration and have 6-8 glasses of water daily." />
+                        android:text="Ensure adequate hydration and have 6 - 8 glasses of water daily." />
 
                 </LinearLayout>
 
@@ -84,7 +84,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ensure a daily diet with adequate protein, dairy products, fruit." />
+                        android:text="Ensure a daily diet with adequate protein, dairy products and fruits." />
                 </LinearLayout>
 
                 <LinearLayout
@@ -150,7 +150,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Take small, frequent meals." />
+                        android:text="Take small and frequent meals." />
 
                 </LinearLayout>
 
@@ -239,7 +239,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="A gap of 2 hours should be kept between the ion and calcium tablets." />
+                        android:text="A gap of 2 hours should be kept between the iron and calcium tablets." />
                 </LinearLayout>
 
                 <LinearLayout
@@ -327,7 +327,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="•	Eat small frequent meals." />
+                        android:text="Eat small frequent meals." />
 
                 </LinearLayout>
 
@@ -344,7 +344,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Have non greasy meals with little odor." />
+                        android:text="Have non-greasy meals with little odor." />
                 </LinearLayout>
 
                 <LinearLayout
@@ -377,7 +377,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="If excessive, vitamin b6 supplements can be tried." />
+                        android:text="If excessive, vitamin B6 supplements can be tried." />
 
                 </LinearLayout>
 
@@ -415,7 +415,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Eat small, frequent meals" />
+                        android:text="Eat small and frequent meals" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -431,7 +431,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Avoid spicy, greasy foods." />
+                        android:text="Avoid spicy and greasy foods." />
 
                 </LinearLayout>
 

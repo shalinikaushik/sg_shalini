@@ -17,7 +17,7 @@
                 <!--android:title="" />-->
 
             <item android:id="@+id/action_refresh"
-                android:icon="@drawable/reload"
+                android:icon="@drawable/reload2"
                 app:showAsAction="ifRoom"
                 android:title="Refresh" />
 
@@ -26,8 +26,13 @@
                 app:showAsAction="ifRoom"
                 android:title="ANC Assist" />
 
+            <!--<item android:id="@+id/offlineAnc2"-->
+                <!--android:icon="@drawable/pregnant"-->
+                <!--app:showAsAction="ifRoom"-->
+                <!--android:title="Register Patient" />-->
+
             <item android:id="@+id/registered_patient"
-                android:icon="@drawable/pregnant"
+                android:icon="@drawable/pinkultrasound"
                 app:showAsAction="ifRoom"
                 android:title="Register Patient" />
 

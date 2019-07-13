@@ -179,7 +179,6 @@
                             android:layout_marginRight="30dp"
                             android:textSize="40px"
                             android:text="Heart Disease  "
-                            android:textColor="#000000"
                             android:textStyle="bold|italic"
                             android:visibility="gone"/>
 
@@ -1190,7 +1189,6 @@
                                             android:layout_height="match_parent"
                                             android:layout_marginTop="5dp"
                                             android:gravity="center"
-                                            android:textColor="#000000"
                                             android:text="@string/anc_GTT"
                                             android:textSize="40px"
                                             android:textStyle="italic|bold"
@@ -1273,7 +1271,6 @@
                                             android:layout_height="match_parent"
                                             android:gravity="center"
                                             android:textStyle="italic|bold"
-                                            android:textColor="#000000"
                                             android:text="@string/blood_sugar"
                                             android:textSize="40px"
                                             android:visibility="gone"/>
@@ -1339,7 +1336,6 @@
                             android:gravity="center"
                             android:textStyle="bold|italic"
                             android:text="@string/NT_NB_scan"
-                            android:textColor="#000000"
                             android:textSize="40px"
                             android:visibility="gone"/>
 
@@ -1426,7 +1422,6 @@
                             android:gravity="center"
                             android:textStyle="italic|bold"
                             android:text="@string/Dual_screen"
-                            android:textColor="#000000"
                             android:textSize="40px"
                             android:visibility="gone"/>
 
@@ -1516,7 +1511,6 @@
                             android:gravity="center"
                             android:textStyle="bold|italic"
                             android:text="@string/Level_II_USG"
-                            android:textColor="#000000"
                             android:textSize="40px"
                             android:visibility="gone"/>
 
@@ -1810,7 +1804,6 @@
                             android:gravity="center"
                             android:textStyle="italic|bold"
                             android:text="@string/general_urine_culture"
-                            android:textColor="#000000"
                             android:visibility="gone"
                             android:textSize="15sp" />
 
@@ -1865,7 +1858,7 @@
                             android:layout_marginLeft="6dp"
                             android:gravity="center"
                             android:text="@string/general_Deranged_Blood_Sugar"
-                            android:textColor="#000000"
+                            android:textStyle="italic|bold"
                             android:textSize="15sp"
                             android:visibility="gone"/>
 
@@ -2570,7 +2563,6 @@
                                         android:layout_marginTop="5dp"
                                         android:gravity="center"
                                         android:text="@string/ANC_2_if_hb"
-                                        android:textColor="#000000"
                                         android:textSize="40px"
                                         android:textStyle="bold|italic"
                                         android:visibility="gone"/>
@@ -2635,7 +2627,6 @@
                                 android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:layout_weight="5"
                                 android:layout_marginLeft="20dp"
                                 android:gravity="center"
@@ -3149,7 +3140,6 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="#000000"
                             android:text="@string/anc_3_GTT"
                             android:textStyle="italic|bold"
                             android:textSize="40px"
@@ -3324,7 +3314,6 @@
                             android:gravity="center"
                             android:textStyle="italic|bold"
                             android:text="@string/anc_3_danger"
-                            android:textColor="#000000"
                             android:textSize="15sp"
                             android:visibility="gone"/>
 
@@ -3960,7 +3949,6 @@
                             android:textStyle="italic|bold"
                             android:gravity="center"
                             android:text="@string/anc_3_danger"
-                            android:textColor="#000000"
                             android:textSize="15sp"
                             android:visibility="gone"/>
 
@@ -4302,7 +4290,6 @@
                             android:textStyle="bold|italic"
                             android:gravity="center"
                             android:text="@string/anc_5_counceliing"
-                            android:textColor="#000000"
                             android:textSize="40px"
                             android:visibility="gone"/>
 
@@ -5264,7 +5251,6 @@
                             android:textStyle="italic|bold"
                             android:gravity="center"
                             android:text="@string/anc_3_danger"
-                            android:textColor="#000000"
                             android:textSize="15sp"
                             android:visibility="gone"/>
 
@@ -5788,7 +5774,6 @@
                             android:gravity="center"
                                     android:textStyle="italic|bold"
                             android:text="@string/anc_3_danger"
-                            android:textColor="#000000"
                             android:textSize="15sp"
                             android:visibility="gone"/>
 
@@ -6271,7 +6256,6 @@
                         android:gravity="center"
                         android:textStyle="italic|bold"
                         android:text="@string/anc_3_danger"
-                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:visibility="gone"/>
 
