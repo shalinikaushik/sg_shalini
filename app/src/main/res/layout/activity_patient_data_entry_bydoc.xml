@@ -339,6 +339,7 @@
                                 android:layout_weight="5"
                                 android:layout_marginLeft="20dp"
                                 android:gravity="center"
+                                android:focusable="false"
                                 android:backgroundTint="@color/colortheme"
                                 android:visibility="gone"/>
 

@@ -97,7 +97,7 @@
     <string name="logout">Logout</string>
 
     <string name="disc" translatable="false">Description</string>
-    <string name="disc0" translatable="false">CompBio@IIT-Roorkee has developed the SwasthGarbh App for the aid of all pregnant women and obstetricians. The App is available for free and no charges are involved to avail the benefit of App.\n\nHowever the App is not a substitute of a Doctor. In case of any difficulty, kindly contact your doctor. Furthermore, the developers do not owe any legal or medical liability, in case of any untoward consequences.  </string>
+    <string name="disc0" translatable="false">CompBio@IIT-Roorkee has developed the SwasthGarbh App for the aid of all pregnant women and obstetricians. The App is available for free and no charges are involved to avail the benefit of App.\n\nHowever, the App is not a substitute of a Doctor. In case of any difficulty, kindly contact your doctor. Furthermore, the developers do not owe any legal or medical liability, in case of any untoward consequences.  </string>
     <string name="disc1" translatable="false">Privacy Policy\n\nComputational Lab IIT-Roorkee built the SwasthGarbh app as a Free app. This SERVICE is provided by Computational Lab IIT-Roorkee at no cost and is intended for use as is.\n\nThis page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.\n\nIf you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.\n\nThe terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at SwasthGarbh unless otherwise defined in this Privacy Policy.</string>
     <string name="disc2" translatable="false">Information Collection and Use\n\nFor a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to blood pressure, weight and other medical information. The information that we request will be retained by us and used as described in this privacy policy.\n\nThe app does use third party services that may collect information used to identify you.\n\nLink to privacy policy of third party service providers used by the app\n\n[Google Play Services](https://www.google.com/policies/privacy/)\n[Firebase Analytics](https://firebase.google.com/policies/analytics)</string>
     <string name="disc3" translatable="false">Log Data\n\nWe want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</string>
@@ -172,11 +172,11 @@
     <string name="blood_sugar">Blood sugar</string>
     <string name="GTT">GTT with 75 gm glucose</string>
     <string name="tsh">TSH</string>
-    <string name="Urine_RM_text">Urine R/M text</string>
+    <string name="Urine_RM_text">Urine R/M </string>
     <string name="VDRL">VDRL</string>
     <string name="HIV">HIV</string>
     <string name="Hbsag">Hbsag</string>
-    <string name="Urine_CS_text">Urine C/S text</string>
+    <string name="Urine_CS_text">Urine C/S </string>
     <string name="NT_NB_scan">NT/NB scan (between 11-13+6 weeks)</string>
     <string name="done">Done/Not done</string>
     <string name="CRL">CRL</string>
@@ -195,21 +195,21 @@
     <string name="general_BG_negative">If BG Negative- ICT (positive/negative)</string>
     <string name="general_TSH"><![CDATA[If TSH >3.5 mU/L- T  Eltroxin 25 microgram]]></string>
     <string name="general_urine_culture">If Urine culture +ve</string>
-    <string name="urine_culture_nitrofur">T Nitrofurantoin 100 mg BDx 7 days</string>
-    <string name="urine_culture_syp">Syp Alkasol 2tsp TDS  X alt day for 14 days</string>
+    <string name="urine_culture_nitrofur">T Nitrofurantoin 100 mg BD x 7 days</string>
+    <string name="urine_culture_syp">Syp Alkasol 2tsp TDS  x alt day for 14 days</string>
     <string name="urine_culture_vit_c">T Vit C OD</string>
     <string name="urine_culture_plenty">Plenty of Fluids</string>
     <string name="general_Deranged_Blood_Sugar">If deranged blood sugar - Diabetic diet </string>
     <string name="Anc_2_POG">POG</string>
     <string name="shortness_of_breath">Shortness of breath</string>
-    <string name="Easy_fatiguability">Easy fatiguability</string>
-    <string name="Headache_epigastric_pain_blurringofvision_nausea">Headache/ epigastric pain/ blurring of vision/ nausea</string>
-    <string name="Bleeding_spotting_pv">Bleeding/ spotting pv</string>
-    <string name="Burning_micturition">Burning micturition/ increased frequency of micturition</string>
+    <string name="Easy_fatiguability">Easy fatigability</string>
+    <string name="Headache_epigastric_pain_blurringofvision_nausea">Headache/epigastric pain/blurring of vision/nausea</string>
+    <string name="Bleeding_spotting_pv">Bleeding/spotting PV</string>
+    <string name="Burning_micturition">Burning micturition/increased frequency of micturition</string>
     <string name="Quickening_Perceived_or_not">Quickening Perceived</string>
     <string name="Pedal_edema">Pedal edema</string>
     <string name="anc_2_pa">P/A</string>
-    <string name="anc_2_Quadruple_Screen">Quadruple Screen( If needed)</string>
+    <string name="anc_2_Quadruple_Screen">Quadruple Screen (If needed)</string>
     <string name="anc_2_Fetal_Echo">Fetal Echo</string>
     <string name="anc_2_advice_OGTT">OGTT with 75 gm glucose (24-28 weeks)</string>
     <string name="anc_2_advice_T_Fe_OD">T Fe OD</string>
@@ -224,15 +224,15 @@
     <string name="anc_2_Peripheral_smear">Peripheral smear</string>
     <string name="anc_2_serum_iron">Serum iron studies</string>
     <string name="anc_2_inj_tetanus">Inj Tetanus 0.5 ml IM</string>
-    <string name="anc_3_Bleeding_leaking_discharge_pv">Bleeding/ spotting per vaginum</string>
-    <string name="anc_3_burning_micturition">Burning micturition/ increased frequency of micturition</string>
+    <string name="anc_3_Bleeding_leaking_discharge_pv">Bleeding/spotting per vaginum</string>
+    <string name="anc_3_burning_micturition">Burning micturition/increased frequency of micturition</string>
     <string name="anc_3_fetal_movements">Adequate fetal movements</string>
     <string name="anc_3_itching">Generalized itching</string>
     <string name="anc_3_GTT_fast"><![CDATA[Fasting > 92 mg/dL]]></string>
     <string name="anc_3_GTT_1hr"><![CDATA[1 hr > 180 mg/dL]]></string>
     <string name="anc_3_GTT_2hr"><![CDATA[2 hr > 153 mg/dL]]></string>
-    <string name="anc_3_CBC"><![CDATA[CBC (<11g/dl)]]></string>
-    <string name="anc_3_urine">Urine c/s</string>
+    <string name="anc_3_CBC"><![CDATA[CBC (<11g/dL)]]></string>
+    <string name="anc_3_urine">Urine C/S</string>
     <string name="anc_3_ICT">ICT</string>
     <string name="anc_3_T_Fe_OD">T Fe OD/ Ca BD</string>
     <string name="anc_3_DFMC_LLP">DFMC/LLP</string>
@@ -268,7 +268,7 @@
     <string name="anc_5_UA_PI">UA PI</string>
     <string name="anc_5_MCA_PI">MCA PI</string>
     <string name="anc_5_CPR">CPR</string>
-    <string name="anc_5_T_Fe_Ca">T Fe OD/ T Ca BD</string>
+    <string name="anc_5_T_Fe_Ca">T Fe OD/T Ca BD</string>
     <string name="anc_3_NST">NST/Manning biweekly</string>
     <string name="anc_6_Pelvic">Pelvic assessment</string>
     <string name="anc_2_pa_2weeks">P/A (should be within 2 weeks of POG)</string>
@@ -283,4 +283,5 @@
     <string name="breakfast">After breakfast</string>
     <string name="lunch">After lunch</string>
     <string name="dinner">After dinner</string>
+    <string name="spott">A spot blood sugar test using glucometer should be done. If BS is less than 60, take biscuits or juice. Contact your treating Physician.</string>
 </resources>
