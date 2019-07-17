@@ -85,6 +85,7 @@ public class MedicineReminder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medicine_reminder);
+        getSupportActionBar().setTitle("Medicines");
 
         dateFormatterShow = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
         dateFormatterServer = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:dd'Z'");
@@ -310,7 +311,7 @@ public class MedicineReminder extends AppCompatActivity {
     public void getPatientData(int id) {
         listPB.setVisibility(View.VISIBLE);
         String url = ApplicationController.get_base_url() + "swasthgarbh/patient/" + id;
-        final ArrayList<MedicineListClass> medicineRowAdapter = new ArrayList<MedicineListClass>();
+        final ArrayList<medicine_list> medicineRowAdapter = new ArrayList<medicine_list>();
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
                 url, null,
                 new Response.Listener<JSONObject>() {
@@ -325,7 +326,7 @@ public class MedicineReminder extends AppCompatActivity {
                             }
                             for (int i = 0; i < medicineData.length(); i++) {
                                 JSONObject po = (JSONObject) medicineData.get(i);
-                                MedicineListClass pr = new MedicineListClass(po.getInt("pk"), po.getString("medicine_name"), po.getString("medicine_start"), po.getString("medicine_end"), po.getString("medicine_freq"), po.getString("medicine_extra_comments"), po.getBoolean("isSOS"));
+                                medicine_list pr = new medicine_list(po.getInt("pk"), po.getString("medicine_name"), po.getString("medicine_start"), po.getString("medicine_end"), po.getString("medicine_freq"), po.getString("medicine_extra_comments"), po.getBoolean("isSOS"));
                                 medicineRowAdapter.add(pr);
                                 Log.i("Data in array", "" + String.valueOf(medicineData.get(i)));
                             }

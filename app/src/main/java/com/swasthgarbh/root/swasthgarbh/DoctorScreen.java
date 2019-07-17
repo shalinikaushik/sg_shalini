@@ -382,7 +382,7 @@ public class DoctorScreen extends AppCompatActivity {
                                         jo.put("high_sys", (int)(Math.random() * ((30 - 10) + 1)) + 10);
                                         jo.put("high_dys", (int)(Math.random() * ((30 - 10) + 1)) + 10);
                                         jo.put("high_weight", (int)(Math.random() * ((30 - 10) + 1)) + 10);
-                                        jo.put("hyper_tension", (int)(Math.random() * ((30 - 10) + 1)) + 10);
+//                                        jo.put("hyper_tension", (int)(Math.random() * ((30 - 10) + 1)) + 10);
                                         jo.put("urine_albumin", (int)(Math.random() * ((30 - 10) + 1)) + 10);
                                         jo.put("who_following", (int)(Math.random() * ((30 - 10) + 1)) + 10);
                                     }
@@ -399,9 +399,9 @@ public class DoctorScreen extends AppCompatActivity {
                             if(analysis_obj.getInt("high_dys")!=0)
                                 yvalues.add(new PieEntry(analysis_obj.getInt("high_dys"), "High Diastolic BP"));
                             if(analysis_obj.getInt("high_weight")!=0)
-                                yvalues.add(new PieEntry(analysis_obj.getInt("high_weight"), "Under Weight"));
-                            if(analysis_obj.getInt("hyper_tension")!=0)
-                                yvalues.add(new PieEntry(analysis_obj.getInt("hyper_tension"), "Hypertensed"));
+                                yvalues.add(new PieEntry(analysis_obj.getInt("high_weight"), "Underweight"));
+//                            if(analysis_obj.getInt("hyper_tension")!=0)
+//                                yvalues.add(new PieEntry(analysis_obj.getInt("hyper_tension"), "Hypertensed"));
                             if(analysis_obj.getInt("urine_albumin")!=0)
                                 yvalues.add(new PieEntry(analysis_obj.getInt("urine_albumin"), "High Urine Albumin"));
                             if(analysis_obj.getInt("who_following")!=0)

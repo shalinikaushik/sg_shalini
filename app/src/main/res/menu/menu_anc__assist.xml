@@ -28,7 +28,7 @@
         <item android:id="@+id/nutri_advise"
             android:icon="@drawable/checkup"
             app:showAsAction="ifRoom"
-            android:title="Nutritional advise" />
+            android:title="Nutritional Advise" />
 
 
     </menu>

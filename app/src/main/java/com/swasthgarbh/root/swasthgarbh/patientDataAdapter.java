@@ -170,6 +170,7 @@ public class patientDataAdapter extends ArrayAdapter<patient_data_listview_class
                 Log.d ("extraelse", "blank");
 
             }
+            Log.d ("elselog", "msgggg");
         }
 
 
@@ -211,6 +212,9 @@ public class patientDataAdapter extends ArrayAdapter<patient_data_listview_class
         }else{
             bleedingVag.setText("Bleeding/vaginum:\t" + Double.toString(current_patient_data.bleedingValue()) + "+");
         }
+
+
+
 
         TextView datePatientRow = (TextView)listItemView.findViewById(R.id.dateRow);
         String[] dateSuff = {"", "st","nd","rd","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","th","st","nd","rd","th","th","th","th","th","th","th","st"};

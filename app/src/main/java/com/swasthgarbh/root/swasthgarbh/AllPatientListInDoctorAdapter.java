@@ -148,25 +148,51 @@ public class AllPatientListInDoctorAdapter extends ArrayAdapter<PatientListRowIn
                                 ArrayList<Integer> colorsdys = new ArrayList<Integer> ( );
 
                                 if (isdocreg==1){
-                                    Object data = response.get ("anc1_exam_BP");
 
+                                    Object data = response.get ("anc1_exam_BP");
+                                    Log.d ("bpppppdata", data+"");
                                     ArrayList<String> bpdata = new ArrayList<>();
-                                    bpdata.add(data+"");
+
+                                    if(data.toString ().contains ("/")) {
+                                        bpdata.add (data + "");
+                                    }
                                     data = response.get ("anc2_exam_BP").toString ();
-                                    bpdata.add(data+"");
-                                    data = response.get ("anc3_exam_BP");
-                                        bpdata.add(data+"");
-                                    data = response.get ("anc4_exam_BP");
-                                        bpdata.add(data+"");
-                                    data = response.get ("anc5_exam_BP");
-                                        bpdata.add(data+"");
-                                    data = response.get ("anc6_exam_BP");
-                                        bpdata.add(data+"");
-                                    data = response.get ("anc7_exam_BP");
-                                        bpdata.add(data+"");
-                                    data = response.get ("anc8_exam_BP");
-                                        bpdata.add(data+"");
-                                    Log.d ("bp ka data", bpdata+"");
+                                    if(data.toString ().contains ("/")) {
+                                        bpdata.add (data + "");
+                                    }
+
+                                        data = response.get ("anc3_exam_BP");
+                                    if(data.toString ().contains ("/")) {
+                                        bpdata.add (data + "");
+                                    }
+
+                                        data = response.get ("anc4_exam_BP");
+                                    if(data.toString ().contains ("/")) {
+                                        bpdata.add (data + "");
+                                    }
+
+                                        data = response.get ("anc5_exam_BP");
+                                    if(data.toString ().contains ("/")) {
+                                        bpdata.add (data + "");
+                                    }
+
+                                        data = response.get ("anc6_exam_BP");
+                                    if(data.toString ().contains ("/")) {
+                                        bpdata.add (data + "");
+                                    }
+
+                                        data = response.get ("anc7_exam_BP");
+                                    if(data.toString ().contains ("/")) {
+                                        bpdata.add (data + "");
+                                    }
+
+                                        data = response.get ("anc8_exam_BP");
+                                    if(data.toString ().contains ("/")) {
+                                        Log.d ("before adding", "bpppppp");
+                                        bpdata.add (data + "");
+                                    }
+                                    Log.d ("bp ka data", bpdata.size ()+"");
+//                                    if (bpdata.size () !=0){
                                     if(bpdata.size ()==0){
                                         Toast.makeText (getContext (), "BP Data not found", Toast.LENGTH_SHORT).show ( );
 
@@ -259,6 +285,7 @@ public class AllPatientListInDoctorAdapter extends ArrayAdapter<PatientListRowIn
                                         chart.invalidate ( );
                                         chart.animateXY (1000, 1000);
                                     }
+
 
                                 }else{
                                     Log.d ("gettheGraph", response.toString ( ));
@@ -358,6 +385,12 @@ public class AllPatientListInDoctorAdapter extends ArrayAdapter<PatientListRowIn
 
 
                             } catch (JSONException e) {
+                                Log.d ("error", "found error");
+                            }
+                            catch (IndexOutOfBoundsException e){
+                                Log.d ("error", "found error");
+                            }
+                            catch (Exception e){
                                 Log.d ("error", "found error");
                             }
 

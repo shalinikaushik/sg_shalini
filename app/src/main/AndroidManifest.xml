@@ -28,6 +28,9 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
 
+
+        <activity android:name=".medicine_list"
+            android:label="Medicines" />
         <activity android:name=".advice_nutritional" />
         <activity android:name=".PatientSignupByDoctor" />
         <activity android:name=".patientDetailInDoctor" />

@@ -98,6 +98,13 @@
             android:layout_height="20dp"
             tools:text="Text 5" />
 
+        <TextView
+            android:id="@+id/extraaaa"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:text="Text 6" />
+
+
     </LinearLayout>
 
     <android.support.constraint.ConstraintLayout

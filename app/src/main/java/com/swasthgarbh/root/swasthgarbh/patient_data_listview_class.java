@@ -56,6 +56,7 @@ public class patient_data_listview_class {
         this.docScreen_or_pScreen=0;
         this.totalPatients = totalPatients;
         this.dummyData = dummyData;
+        this.extra_comments="null";
     }
 
     public patient_data_listview_class(int dummyDataVariable, int totalPatients, String date, int bp_sysArg, int bp_dysArg, Double urine_albuminArg,

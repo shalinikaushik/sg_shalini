@@ -23,4 +23,8 @@
         <item name="android:layout_margin">0dp</item>
     </style>
 
+    <style name="ActionBarPopupThemeOverlay">pop_up</style>
+
+    <style name="ActionBarThemeOverlay">theme_bar</style>
+
 </resources>

@@ -64,7 +64,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-public class MedicineAdapter extends ArrayAdapter<MedicineListClass> {
+public class MedicineAdapter extends ArrayAdapter<medicine_list> {
 
     static SessionManager session;
     Dialog add_medicine_dialog;
@@ -81,6 +81,8 @@ public class MedicineAdapter extends ArrayAdapter<MedicineListClass> {
     LinearLayout periodLayout;
     ImageView deleteMedicine;
 
+
+
     private DatePickerDialog fromDatePickerDialog;
     private DatePickerDialog toDatePickerDialog;
 
@@ -90,7 +92,7 @@ public class MedicineAdapter extends ArrayAdapter<MedicineListClass> {
     Calendar newDate1 = Calendar.getInstance();
     Calendar newDate2 = Calendar.getInstance();
 
-    public MedicineAdapter(Activity context, ArrayList<MedicineListClass> patientData) {
+    public MedicineAdapter(Activity context, ArrayList<medicine_list> patientData) {
         super(context, 0, patientData);
     }
 
@@ -366,11 +368,12 @@ public class MedicineAdapter extends ArrayAdapter<MedicineListClass> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        final MedicineListClass current_medicine_data = getItem(position);
+        final medicine_list current_medicine_data = getItem(position);
 
         View listItemView = convertView;
         if(listItemView == null){
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.medicine_list_row, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.activity_medicine_list, parent, false);
+
         }
 
         final LinearLayout medicineBlock = (LinearLayout)listItemView.findViewById(R.id.medicineBlock);
