@@ -86,7 +86,7 @@ public class DoctorSignup extends AppCompatActivity implements View.OnClickListe
 
 
             String url = ApplicationController.get_base_url() + "dhadkan/api/onboard/doc";
-            JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
+            final JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                     url, null,
                     new Response.Listener<JSONObject>() {
 

@@ -162,15 +162,15 @@ public class patientDataAdapter extends ArrayAdapter<patient_data_listview_class
             } else {
                 visualProb.setVisibility (View.VISIBLE);
             }
-            if (!current_patient_data.getExtra_comments ( ).equals("null") ){
+            if (!current_patient_data.getExtra_comments ( ).equals("") || !current_patient_data.getExtra_comments ( ).equals("null")  ){
                 Log.d ("extraaa", current_patient_data.getExtra_comments ( ));
                 extraComment.setText ("Extra Comments: " + current_patient_data.getExtra_comments ( ));
-            }else {
-                extraComment.setVisibility (View.GONE);
+            }if (current_patient_data.getExtra_comments ( ).equals("") ){
+                extraComment.setText (current_patient_data.getExtra_comments ( ));
+//                extraComment.setVisibility (View.GONE);
                 Log.d ("extraelse", "blank");
 
             }
-            Log.d ("elselog", "msgggg");
         }
 
 
@@ -208,9 +208,10 @@ public class patientDataAdapter extends ArrayAdapter<patient_data_listview_class
 
         TextView bleedingVag = (TextView)listItemView.findViewById(R.id.bleedingVag);
         if(current_patient_data.bleedingValue() == 0){
-            bleedingVag.setText("Bleeding/vaginum:\t" + "N/A");
+            bleedingVag.setText("Bleeding PV:\t" + "N/A");
         }else{
-            bleedingVag.setText("Bleeding/vaginum:\t" + Double.toString(current_patient_data.bleedingValue()) + "+");
+            bleedingVag.setText("Bleeding PV:" + Double.toString(current_patient_data.bleedingValue()) + "+");
+            Log.d ("bleed", current_patient_data.bleedingValue() +"");
         }
 
 

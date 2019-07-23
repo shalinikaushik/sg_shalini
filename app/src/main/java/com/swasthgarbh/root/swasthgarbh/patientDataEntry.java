@@ -299,13 +299,13 @@ public class patientDataEntry extends AppCompatActivity {
 //                            params.put("hyper_tension", (sys >= 180 && dys >=120) ? Boolean.TRUE : Boolean.FALSE);
 
                             String extraComm = extraComments.getText ( ).toString ( );
-//                            if(extraComments.getText().length()==0){
-//                                extraComm = "";
-//                          }
-//                            else {
-//                                extraComm = extraComments.getText ( ).toString ( );
+                            if(extraComments.getText().length()==0){
+                                extraComm = "";
+                          }
+                            else {
+                                extraComm = extraComments.getText ( ).toString ( );
                                 params.put ("extra_comments", extraComments.getText ( ).toString ( ));
-//                            }
+                            }
 
 
 
