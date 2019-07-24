@@ -156,21 +156,63 @@ public class WHOGuidelines extends AppCompatActivity {
                             anc1_urine.setChecked(response.getBoolean("anc1_urine"));
                             c = (Calendar) newDate1.clone();
                             c.add(Calendar.DATE,-2);
+                            Log.d("2 days before", c +"");
+                            c.set(Calendar.HOUR,9);
+                            c.set(Calendar.MINUTE,0);
+                            c.set(Calendar.SECOND,0);
+                            c.set(Calendar.AM_PM,Calendar.AM);
 
                             //when current date is less than newDate1
                             if(newDate1.compareTo(Calendar.getInstance())>0){
+                                Log.d("is something done", "yes");
                                 //when current date is before c(i.e. 2 days before newDate1)
                                if(c.compareTo(Calendar.getInstance())>0){
                                    setNotification(manager,c,key);
+                                   Log.d ("if ", "yessss");
                                }
                                //when current date is greater than or equal to c(i.e. 2 days before newDate1)
                                //but less than newDate1
                                else {
                                    setNotification(manager,Calendar.getInstance(),++key);
                                }
-
-
                             }
+
+                            Calendar e = Calendar.getInstance();
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            e.set(Calendar.HOUR,9);
+                            e.set(Calendar.MINUTE,0);
+                            e.set(Calendar.SECOND,0);
+                            e.set(Calendar.AM_PM,Calendar.AM);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+                            Calendar g = Calendar.getInstance();
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            g.set(Calendar.HOUR,9);
+                            g.set(Calendar.MINUTE,0);
+                            g.set(Calendar.SECOND,0);
+                            g.set(Calendar.AM_PM,Calendar.AM);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
 
                             newDate1.add(Calendar.DATE, 56);
                             anc2Date.setText("20 Weeks - " + sdf.format(newDate1.getTime()));
@@ -190,8 +232,32 @@ public class WHOGuidelines extends AppCompatActivity {
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
                                 }
+                            }
 
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
 
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
                             }
 
 
@@ -214,9 +280,34 @@ public class WHOGuidelines extends AppCompatActivity {
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
                                 }
-
-
                             }
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+
 
 
                             newDate1.add(Calendar.DATE, 28);
@@ -237,8 +328,34 @@ public class WHOGuidelines extends AppCompatActivity {
                                 else {
                                     setNotification(manager, Calendar.getInstance(), ++key);
                                 }
-
                             }
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+
 
 
                             newDate1.add(Calendar.DATE, 28);
@@ -260,8 +377,34 @@ public class WHOGuidelines extends AppCompatActivity {
                                     setNotification(manager,Calendar.getInstance(),++key);
                                 }
 
-
                             }
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+
 
 
 
@@ -284,8 +427,34 @@ public class WHOGuidelines extends AppCompatActivity {
                                     setNotification(manager,Calendar.getInstance(),++key);
                                 }
 
-
                             }
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+
 
 
                             newDate1.add(Calendar.DATE, 14);
@@ -305,10 +474,32 @@ public class WHOGuidelines extends AppCompatActivity {
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
                                 }
-
-
+                            }
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
                             }
 
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
 
 
                             newDate1.add(Calendar.DATE, 16);
@@ -331,6 +522,34 @@ public class WHOGuidelines extends AppCompatActivity {
 
 
                             }
+
+                            e = (Calendar) newDate1.clone();
+                            e.add(Calendar.DATE,+2);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+                            g = (Calendar) newDate1.clone();
+                            g.add(Calendar.DATE,+5);
+                            //when current date is greater than newDate1
+                            if(newDate1.compareTo(Calendar.getInstance())<0) {
+                                //when current date is after c(i.e. 2 days after newDate1)
+                                if(c.compareTo(Calendar.getInstance())<0) {
+                                    setNotification (manager, c, key);
+                                }
+                                else {
+                                    setNotification(manager,Calendar.getInstance(),++key);
+                                }
+                            }
+
+
 
 
 

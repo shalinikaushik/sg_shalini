@@ -35,7 +35,7 @@ public class AlarmReceiver extends BroadcastReceiver{
 
         Notification.Builder builder = new Notification.Builder(context);
 
-        Notification notification = builder.setContentTitle("Demo App Notification")
+        Notification notification = builder.setContentTitle("SwasthGarbh")
                 .setContentText("New Notification From Demo App..")
                 .setTicker("New Message Alert!")
                 .setSmallIcon(R.mipmap.ic_launcher)

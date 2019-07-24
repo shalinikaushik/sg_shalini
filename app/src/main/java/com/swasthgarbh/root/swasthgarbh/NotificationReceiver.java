@@ -31,8 +31,8 @@ public class NotificationReceiver extends BroadcastReceiver {
 
         Notification.Builder builder = new Notification.Builder(context);
 
-        Notification notification = builder.setContentTitle("Demo App Notification")
-                .setContentText("WHO NOTIFICATION")
+        Notification notification = builder.setContentTitle("SwasthGarbh Notification")
+                .setContentText("ANC visit notification")
                 .setTicker("New Message Alert!")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(pendingIntent).build();
