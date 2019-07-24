@@ -188,7 +188,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -206,7 +206,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -240,7 +240,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -253,7 +253,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -287,7 +287,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -300,7 +300,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -335,7 +335,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -348,7 +348,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -384,7 +384,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -397,7 +397,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -434,7 +434,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -447,7 +447,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -481,7 +481,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -494,7 +494,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -529,7 +529,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, e, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
@@ -542,7 +542,7 @@ public class WHOGuidelines extends AppCompatActivity {
                             if(newDate1.compareTo(Calendar.getInstance())<0) {
                                 //when current date is after c(i.e. 2 days after newDate1)
                                 if(c.compareTo(Calendar.getInstance())<0) {
-                                    setNotification (manager, c, key);
+                                    setNotification (manager, g, key);
                                 }
                                 else {
                                     setNotification(manager,Calendar.getInstance(),++key);
